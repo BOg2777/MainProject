@@ -1,0 +1,41 @@
+
+
+.title{
+    font-family: "Actay Wide";
+
+    font-size: 40px;
+    font-weight: 700;
+
+    margin-bottom: 30px;
+}
+
+.filter{
+    display: flex;
+    /* align-items: center; */
+    gap: 5px;
+    margin-bottom: 25px;
+}
+
+.input{
+    border-radius: 40px;
+    padding: 10px;
+    outline: none;
+    font-size: 16px;
+    width: 1110px;
+}
+
+.filterCategory{
+    border: 1px solid black;
+    border-radius: 40px;
+    padding: 10px;
+    width: 390px;
+    cursor: pointer;
+}
+
+.listitems{
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
