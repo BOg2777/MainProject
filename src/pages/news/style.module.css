@@ -32,7 +32,7 @@
     cursor: pointer;
 }
 
-.listitems{
+.listItems{
 
     display: flex;
     flex-wrap: wrap;
