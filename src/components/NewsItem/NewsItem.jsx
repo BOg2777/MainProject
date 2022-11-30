@@ -12,7 +12,7 @@ function NewsItem({ item }) {
           <div className={styles.title}>{item.title}</div>
           <div className={styles.wrapperText}>
             <div className={styles.text}>{item.text}</div>
-            <div className={`${styles.text} ${styles.data}`}>{item.data}</div>
+            <div className={`${styles.text} ${styles.date}`}>{item.date}</div>
           </div>
         </div>
       </div>

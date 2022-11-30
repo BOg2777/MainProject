@@ -14,7 +14,7 @@
 
 .navBar{
   z-index: 1;
-  position: fixed;
+  position: absolute;
   width: 338px;
   height: 868px;
   background-color: #F2F2F2;
