@@ -1,3 +1,133 @@
+.wrapper{
+    position: absolute;
+    width: 456px;
+    height: 710px;
+    left: 40%;
+    top: 25%;
+    background: #FFFFFF;
+    border-radius: 24px;
+}
+.blur{
+    backdrop-filter: blur(8px);
+    background: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:90px;
+    bottom: -1px;
+    left:-1px;
+}
+.title{
+    margin-top: 40px;
+    margin-bottom: 32px;
+    font-size:40px;
+    line-height: 48px;
+    align-items: center;
+}
+.Input{
+    width: 344px;
+    height: 44px;
+    margin-bottom: 24px;
+    background: #FFFFFF;
+    border: 1px solid #D4D4D4;
+    border-radius: 4px;
+}
 .form{
-    
+    margin:0px 56px 0px 56px;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    text-align: left;
+}
+.nameInput{
+    font-size: 14px;
+    padding-bottom: 4px;
+}
+.btn{
+    width: 344px;
+    height: 44px;
+    background: #949494;
+    border-radius: 100px;
+}
+.descriptionIcons{
+    margin-top: 24px;
+    margin-bottom: 24px;
+    font-family: 'Hauora';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+}
+.line{
+    margin-top: 40px;
+}
+.otherInput{
+    font-family: 'Hauora';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+}
+.textInput{
+    color:#8EA912;
+    text-decoration: underline;
+}
+.footer{
+    width: 456px;
+    height: 50px;
+    text-align: center;
+    margin-top: 14px;
+    font-family: 'Hauora';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: #949494;
+}
+.footer_title{
+    color:#8EA912;
+}
+.img{
+    margin-right: 8px;
+    text-align: center;
+    box-sizing: border-box;
+    width: 62px;
+    height: 40px;
+    border: 1px solid #252525;
+    border-radius: 100px;
+}
+.wrapperImg{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+}
+.logo{
+    margin-top: 10px;
+    width: 16px;
+    height: 16px;
+}
+.cross{
+    margin-top: 3px;
+    width: 10px;
+    height: 10px;
+}
+.crossWrapeer{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border-radius: 7px;
+    border: 2px solid #252525;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    left: 90%;
+    right: 18.75%;
+    top: 3%;
+    bottom: 18.75%;
 }

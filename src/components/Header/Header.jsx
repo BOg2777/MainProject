@@ -27,11 +27,11 @@ function Header() {
         <ul className={styles.userBar}>
             <li className={styles.headerSearch}> <img src={search} alt="search"/> <input type="text" placeholder="Поиск" className={styles.search}/></li>
             <li className={styles.favourites}><Favourite className={styles.favourite}/> </li>
-            <li className={styles.user}><User className={styles.userImg} onClick={()=>setRegistration(!registration)}/></li>
+            <li className={styles.user} onClick={()=>setRegistration(true)}><User className={styles.userImg} /></li>
             <li className={styles.shoppingBag}><ShoppingBag className={styles.shoppingBagImg}/></li>
         </ul>
       </nav>
-      <Registration registration={registration} />
+      <Registration registration={registration} setRegistration={setRegistration} />
   </header>
 
   );
