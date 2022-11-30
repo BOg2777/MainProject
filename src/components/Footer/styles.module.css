@@ -31,6 +31,7 @@
 }
 
 .columnName {
+  cursor: default;
   font-size: 24px;
   line-height: 32px;
   padding-bottom: 40px;
@@ -44,6 +45,7 @@
 }
 
 .columnNameLast {
+  cursor: default;
   font-size: 24px;
   line-height: 32px;
   padding-bottom: 32px;
@@ -90,6 +92,7 @@
 }
 
 .termsAndConditions {
+  cursor: pointer;
   text-decoration: none;
   list-style: none;
   font-family: "Hauora";
@@ -107,6 +110,7 @@
 }
 
 .navigationList {
+  cursor: pointer;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -120,6 +124,7 @@
 }
 
 .informationList {
+  cursor: pointer;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -161,12 +166,21 @@
   color: #949494;
 }
 
+.search:focus,.search:hover, .search:active {
+  border: 1px solid #dfff4f;
+  appearance: none;
+  outline: none;
+  color: #dfff4f;
+  font-size: larger;
+}
+
 .inputBtn {
   background: none;
   border: none;
   position: relative;
   bottom: 7.5%;
   left: 75%;
+  cursor: pointer;
 }
 
 .socialNetworks {
@@ -178,6 +192,7 @@
   height: 24px;
   gap: 8px;
   padding-top: 32px;
+  cursor: pointer;
 }
 
 .navigation {
