@@ -1,13 +1,13 @@
 @font-face {
   font-family: 'actaywide-bold';    
-    src: url("../../font/ttf/actaywide-bold.otf") format("truetype");
+    src: url("../../font/Actay/actaywide-bold.otf") format("truetype");
     font-weight: 700;
     font-style: normal;
   }
 
   @font-face {
     font-family: 'Hauora';    
-      src: url("../../font/ttf/Hauora-Bold.ttf") format("truetype");
+      src: url("../../font/Hauora/Hauora-Bold.ttf") format("truetype");
       font-weight: 600;
       font-style: normal;
     }  
@@ -22,9 +22,9 @@
   padding-top: 96px;
 }
 
-.wrapper{
+/* .wrapper{
   
-}
+} */
 
 .navItem{
   display: flex;
@@ -53,9 +53,9 @@
   color:#252525;
 } 
 
-.navSabItem{
+/* .navSabItem{
 
-}
+} */
 
 .btn{
   font-family: 'Hauora';
