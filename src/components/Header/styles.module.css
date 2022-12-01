@@ -6,15 +6,18 @@
 }
 
 .header {
+   z-index: 2; 
+  position: absolute; 
+
   height: 76px;
   background: #252525;
   border-radius: 16px;
-  margin: 16px 10px 0px 10px;
   text-align: center;
 }
 
 .appNavigation {
   display: flex;
+  gap: 487px;
   align-items: center;
   padding-top: 24px;
 }
@@ -54,11 +57,14 @@
   width: 99px;
 }
 
+
 .navList {
   border: 1.5px solid #f2f2f2;
   height: 28px;
   border-radius: 100px;
   cursor: pointer;
+  text-decoration: none;
+  color: #f2f2f2;
 }
 
 .navList:hover,
