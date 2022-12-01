@@ -1,7 +1,16 @@
+@font-face {
+    font-family: 'Actay Wide';
+    src: url('../../fonts/Actay/ActayWide-Bold.otf') format("truetype");
+    font-weight: 500;
+    font-style: normal;
+  }
 
-
+.wrapper{
+    padding: 20px 20px;
+}
+  
 .title{
-    font-family: "Actay Wide";
+    font-family: 'Actay Wide';
 
     font-size: 40px;
     font-weight: 700;
@@ -32,7 +41,7 @@
     cursor: pointer;
 }
 
-.listitems{
+.listItems{
 
     display: flex;
     flex-wrap: wrap;

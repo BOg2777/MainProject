@@ -1,3 +1,17 @@
+@font-face {
+    font-family: 'Hauora';
+    src: url("../../fonts/Hauora/Hauora-Bold.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal;
+  }
+
+@font-face {
+    font-family: 'Actay Wide';
+    src: url('../../fonts/Actay/ActayWide-Bold.otf') format("truetype");
+    font-weight: 500;
+    font-style: normal;
+  }
+
 .wrapperItem{
     display: flex;
     flex-direction: column;
@@ -39,6 +53,6 @@
     line-height: 24px;
 }
 
-.data{
+.date{
     color: #949494;
 }
