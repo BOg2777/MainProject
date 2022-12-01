@@ -1,13 +1,13 @@
 @font-face {
-  font-family: 'actaywide-bold';    
-    src: url('../../fonts/Actay/ActayWide-Bold.otf') format("truetype");
+  font-family: 'actaywide-bold';
+    src: url('../../font/Actay/actaywide-bold.otf') format("truetype");
     font-weight: 700;
     font-style: normal;
   }
 
   @font-face {
-    font-family: 'Hauora';    
-      src: url('../../fonts/Hauora/Hauora-Bold.ttf') format("truetype");
+    font-family: 'Hauora';
+      src: url('../../font/Hauora/Hauora-Bold.ttf') format("truetype");
       font-weight: 600;
       font-style: normal;
     }  

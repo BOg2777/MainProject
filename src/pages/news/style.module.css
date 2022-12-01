@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'actaywide-bold';    
-      src: url('../../fonts/Actay/ActayWide-Bold.otf') format("truetype");
+      src: url('../../font/Actay/actaywide-bold.otf') format("truetype");
       font-weight: 700;
       font-style: normal;
     }
