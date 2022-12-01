@@ -11,10 +11,13 @@ import {ReactComponent as Favourite} from '../../img/Header/Favourite.svg'
 import {ReactComponent as User} from '../../img/Header/User.svg'
 import {ReactComponent as ShoppingBag} from '../../img/Header/ShoppingBag.svg'
 import NavBar from "../NavBar/NavBar"
+import Registration from "../Registration/Registration";
+
 
 function Header() {
 
   const [nav, setNav] = useState(false);
+  const [registration, setRegistration] = useState(false);
   
   return (
     <>
@@ -30,10 +33,11 @@ function Header() {
             <ul className={styles.userBar}>
                 <li className={styles.headerSearch}> <img src={search} alt="search"/> <input type="text" placeholder="Поиск" className={styles.search}/></li>
                 <li className={styles.favourites}><Favourite className={styles.favourite}/> </li>
-                <li className={styles.user}><User className={styles.userImg}/></li>
+                <li className={styles.user} onClick={()=>setRegistration(true)}><User className={styles.userImg}/></li>
                 <li className={styles.shoppingBag}><ShoppingBag className={styles.shoppingBagImg}/></li>
           </ul>
         </nav>
+        <Registration registration={registration} setRegistration={setRegistration} />
       </header>
       {nav ? <NavBar/> : ""}
     </> 
