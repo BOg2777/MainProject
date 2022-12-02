@@ -1,0 +1,1 @@
+export {default as InputUser} from 'components/Input/Input'

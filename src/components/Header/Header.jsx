@@ -3,7 +3,6 @@ import { useState } from "react";
 import { Link } from 'react-router-dom'
 
 import NavBar from "components/NavBar/NavBar"
-import Registration from "components/Registration/Registration";
 
 import logo from 'img/Header/Logo.svg'
 import search from 'img/Header/Search.svg'
@@ -14,10 +13,8 @@ import {ReactComponent as ShoppingBag} from 'img/Header/ShoppingBag.svg'
 
 import styles from 'components/Header/styles.module.css';
 
-function Header() {
-
+function Header({setRegistration}) {
   const [nav, setNav] = useState(false);
-  const [registration, setRegistration] = useState(false);
   
   return (
     <>
@@ -37,7 +34,6 @@ function Header() {
                 <li className={styles.shoppingBag}><ShoppingBag className={styles.shoppingBagImg}/></li>
           </ul>
         </nav>
-        <Registration registration={registration} setRegistration={setRegistration} />
       </header>
       {nav ? <NavBar/> : ""}
     </> 

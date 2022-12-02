@@ -1,22 +1,27 @@
 import React from 'react';
-import { Routes, Route } from 'react-router-dom'
+import { Routes, Route } from 'react-router-dom';
+import { useState } from "react";
 
-import { Header,AboveHeader,Footer } from "components";
+import { Header,AboveHeader,Footer, Registration,InputUser } from "components";
 import { TShirts,News } from "pages";
 
-import "App.css";
+import 'App.css';
 
 function App() {
+  const [registration, setRegistration] = useState(false);
+  const [inputShow, setInputShow] = useState(false);
   return (
-    <>
+    <div>
+      <Registration registration={registration} setRegistration={setRegistration} inputShow={inputShow} setInputShow={setInputShow}/>
+      <InputUser registration={registration} setRegistration={setRegistration} inputShow={inputShow} setInputShow={setInputShow} />
       <AboveHeader />
-      <Header />
+      <Header setRegistration={setRegistration} />
       <Routes>
             <Route path='/Stock' element={ < TShirts /> } />
             <Route path='/News' element={ < News /> }/>     
           </Routes>
       <Footer/>
-    </>
+    </div>
   );
 }
 

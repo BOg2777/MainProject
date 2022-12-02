@@ -1,9 +1,9 @@
 .wrapper{
     position: fixed;
     width: 456px;
-    height: 710px;
+    height: 620px;
     left: 40%;
-    top: 15%;
+    top: 20%;
     background: #FFFFFF;
     border-radius: 24px;
     z-index: 1500;
@@ -13,10 +13,9 @@
     backdrop-filter: blur(8px);
     background: rgba(0, 0, 0, 0.4);
     width: 100%;
-    min-height: 100%;
-    max-height: 2000%;
-    left: 0px;
-    top: 0px;
+    height: 100%;
+    left:-1px;
+    top: -1px;
     z-index: 1500;
 }
 .title{
