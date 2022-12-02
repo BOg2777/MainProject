@@ -1,13 +1,14 @@
 import React, { useState } from 'react';
-
 import validator from 'validator';
-import styles from './styles.module.css';
-import logoApple from '../../img/Registration/Apple.png';
-import logoFacebook from '../../img/Registration/Facebook.png';
-import logoGoogle from '../../img/Registration/Google.png';
-import logoVk from '../../img/Registration/Vk-fill.png';
-import logoYandex from '../../img/Registration/Yandex.png';
-import Cross from '../../img/Registration/Vector.png';
+
+import logoApple from 'img/Registration/Apple.png';
+import logoFacebook from 'img/Registration/Facebook.png';
+import logoGoogle from 'img/Registration/Google.png';
+import logoVk from 'img/Registration/Vk-fill.png';
+import logoYandex from 'img/Registration/Yandex.png';
+import Cross from 'img/Registration/Vector.png';
+
+import styles from 'components/Registration/styles.module.css';
 
 
 function Registration({registration , setRegistration}){

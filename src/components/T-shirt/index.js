@@ -1,0 +1,1 @@
+export {default as TShirt} from 'components/T-shirt/T-shirt'

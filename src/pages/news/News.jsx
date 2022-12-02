@@ -1,8 +1,8 @@
 import React from "react";
 
-import styles from './style.module.css';
-import NewsItem from "../../components/NewsItem/NewsItem";
+import { NewsItem } from "components";
 
+import styles from 'pages/news/style.module.css';
 
 function News() {
 

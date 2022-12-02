@@ -1,9 +1,11 @@
 import React from "react";
 
-import styles from './styles.module.css';
-import TShirt from "../../../../components/T-shirt/T-shirt"
-import logo from '../../../../img/Mens-T-shirt/T-shirt_APLH217-1.png'
-import logo2 from '../../../../img/Mens-T-shirt/T-shirt_KAWASAKIST-T1026BLUE.png'
+import { TShirt } from "components";
+
+import logo from 'img/Mens-T-shirt/T-shirt_APLH217-1.png'
+import logo2 from 'img/Mens-T-shirt/T-shirt_KAWASAKIST-T1026BLUE.png'
+
+import styles from 'pages/badminton/MensClothing/T-shirts/styles.module.css';
 
 function TShirts() {
     console.log(logo);

@@ -1,0 +1,7 @@
+export {AboveHeader} from 'components/AboveHeader'
+export {Footer} from 'components/Footer'
+export {Header} from 'components/Header'
+export {NavBar} from 'components/NavBar'
+export {NewsItem} from 'components/NewsItem'
+export {Registration} from 'components/Registration'
+export {TShirt} from 'components/T-shirt'
