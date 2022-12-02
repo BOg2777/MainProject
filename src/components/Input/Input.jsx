@@ -1,0 +1,75 @@
+import React, { useState } from 'react';
+
+import logoApple from 'img/Registration/Apple.png';
+import logoFacebook from 'img/Registration/Facebook.png';
+import logoGoogle from 'img/Registration/Google.png';
+import logoVk from 'img/Registration/Vk-fill.png';
+import logoYandex from 'img/Registration/Yandex.png';
+import Cross from 'img/Registration/Vector.png';
+
+import styles from 'components/Input/styles.module.css';
+
+function InputUser({registration , setRegistration, inputShow, setInputShow}){
+    const [register, setRegister] = useState(() => {
+        return {
+            email: "",
+            password: "",
+            passwordRepeat: "",
+        }
+    }) 
+
+    function changeInputRegister  (event, name) {
+        setRegister((prev) => {
+            return {
+                ...prev,
+                [event.target[name]]: event.target.value,
+            }
+        })
+    }
+
+    function Entry(name,placeholder){
+        return (<div className={styles.nameInputWrapper}><p className={styles.nameInput}>{name}*: </p><input 
+        type={name}
+        placeholder={placeholder}
+        id={name}
+        name={name}
+        value={register[name]}
+        onChange={(event)=>changeInputRegister(event,name)}
+        className = {styles.Input}/></div>
+        )
+    };
+
+    function OpenRegister(){
+        setRegistration(!registration);
+        setInputShow(!inputShow);
+    };
+    if(inputShow){
+        return(
+            <div className={styles.blur}>
+                <div className={styles.wrapper}>
+                    <div>
+                        <div className={styles.crossWrapeer} onClick={()=>setInputShow(!inputShow)}><img src={Cross} className={styles.cross}/></div>
+                    </div>
+                    <h2 className={styles.title}>Login:</h2>
+                    <div className={styles.wrapperImg}>
+                        <div className={styles.img}><img src= {logoApple} className={styles.logo} /></div>
+                        <div className={styles.img}><img src= {logoFacebook} className={styles.logo}/></div>
+                        <div className={styles.img}><img src= {logoGoogle} className={styles.logo}/></div>
+                        <div className={styles.img}><img src= {logoVk} className={styles.logo}/></div>
+                        <div className={styles.img}><img src= {logoYandex} className={styles.logo}/></div>
+                    </div>
+                    <h1 className={styles.descriptionIcons}>или зарегистрируйтесь с помощью email</h1>
+                    <form  className={styles.form}>
+                        {Entry('Email', 'Введите Ваш адрес эл. почты')}
+                        {Entry('Password', 'Введите Ваш пароль')}
+                        <input type="submit" value='Войти' className={styles.btn}/>
+                    </form>
+                    <hr className={styles.line}></hr>
+                    <div className={styles.otherInput}><p>Еще не зарегистрированы?</p><p className={styles.textInput} onClick={OpenRegister}>Зарегистрироваться</p></div>
+                    <div className={styles.footer}>Создавая аккаунт я соглашаюсь <p className={styles.footer_title}>c  Политикой конфиденциальности и Условиями пользования</p></div>
+            </div>
+        </div>
+        )
+    }
+}
+export default InputUser;

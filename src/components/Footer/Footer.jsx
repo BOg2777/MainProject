@@ -1,19 +1,19 @@
 import React from "react";
 
-import styles from "./styles.module.css";
+import logo from "img/Header/Logo.svg";
+import facebook from "img/Footer/facebook.svg";
+import twitter from "img/Footer/twitter.svg";
+import instagram from "img/Footer/inst.svg";
+import vk from "img/Footer/vk.svg";
+import arrow from "img/Footer/arrow.svg";
+import applePay from "img/Footer/apple.svg";
+import googlePay from "img/Footer/google.svg";
+import visa from "img/Footer/visa.svg";
+import mastercard from "img/Footer/Master.svg";
+import mir from "img/Footer/Mir.svg";
+import belcard from "img/Footer/Belcart.svg";
 
-import logo from "../../img/Header/Logo.svg";
-import facebook from "../../img/Footer/facebook.svg";
-import twitter from "../../img/Footer/twitter.svg";
-import instagram from "../../img/Footer/inst.svg";
-import vk from "../../img/Footer/vk.svg";
-import arrow from "../../img/Footer/arrow.svg";
-import applePay from "../../img/Footer/apple.svg";
-import googlePay from "../../img/Footer/google.svg";
-import visa from "../../img/Footer/visa.svg";
-import mastercard from "../../img/Footer/Master.svg";
-import mir from "../../img/Footer/Mir.svg";
-import belcard from "../../img/Footer/Belcart.svg";
+import styles from "components/Footer/styles.module.css";
 
 function Footer() {
   return (

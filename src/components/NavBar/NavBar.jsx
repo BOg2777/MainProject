@@ -1,8 +1,9 @@
 import React from "react";
 
-import styles from './style.module.css'
-import icon2 from '../../img/NavBar/Vector.svg'
-import icon from '../../img/NavBar/backNavBar.svg';
+import icon2 from 'img/NavBar/Vector.svg'
+import icon from 'img/NavBar/backNavBar.svg';
+
+import styles from 'components/NavBar/style.module.css'
 
 function NavBar() {
 

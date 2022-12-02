@@ -2,22 +2,19 @@ import React from "react";
 import { useState } from "react";
 import { Link } from 'react-router-dom'
 
-import styles from './styles.module.css';
+import NavBar from "components/NavBar/NavBar"
 
-import logo from '../../img/Header/Logo.svg'
-import search from '../../img/Header/Search.svg'
-import {ReactComponent as Menu} from '../../img/Header/Filter.svg'
-import {ReactComponent as Favourite} from '../../img/Header/Favourite.svg'
-import {ReactComponent as User} from '../../img/Header/User.svg'
-import {ReactComponent as ShoppingBag} from '../../img/Header/ShoppingBag.svg'
-import NavBar from "../NavBar/NavBar"
-import Registration from "../Registration/Registration";
+import logo from 'img/Header/Logo.svg'
+import search from 'img/Header/Search.svg'
+import {ReactComponent as Menu} from 'img/Header/Filter.svg'
+import {ReactComponent as Favourite} from 'img/Header/Favourite.svg'
+import {ReactComponent as User} from 'img/Header/User.svg'
+import {ReactComponent as ShoppingBag} from 'img/Header/ShoppingBag.svg'
 
+import styles from 'components/Header/styles.module.css';
 
-function Header() {
-
+function Header({setRegistration}) {
   const [nav, setNav] = useState(false);
-  const [registration, setRegistration] = useState(false);
   
   return (
     <>
@@ -37,7 +34,6 @@ function Header() {
                 <li className={styles.shoppingBag}><ShoppingBag className={styles.shoppingBagImg}/></li>
           </ul>
         </nav>
-        <Registration registration={registration} setRegistration={setRegistration} />
       </header>
       {nav ? <NavBar/> : ""}
     </> 

@@ -1,9 +1,9 @@
 import React from "react";
 
-import styles from "./styles.module.css";
+import whatsapp from "img/Header/Whatsapp.svg";
+import telegram from "img/Header/Telegram.svg";
 
-import whatsapp from "../../img/Header/Whatsapp.svg";
-import telegram from "../../img/Header/Telegram.svg";
+import styles from "components/AboveHeader/styles.module.css";
 
 function AboveHeader() {
   return (
