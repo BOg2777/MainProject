@@ -2,7 +2,7 @@ import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import { useState } from "react";
 
-import { Header,AboveHeader,Footer, Registration,InputUser } from "components";
+import { Header,AboveHeader,Footer, Registration,InputUser, InfoAndOffers } from "components";
 import { TShirts,News } from "pages";
 
 import 'App.css';
@@ -16,6 +16,7 @@ function App() {
       <InputUser registration={registration} setRegistration={setRegistration} inputShow={inputShow} setInputShow={setInputShow} />
       <AboveHeader />
       <Header setRegistration={setRegistration} />
+      <InfoAndOffers />
       <Routes>
             <Route path='/Stock' element={ < TShirts /> } />
             <Route path='/News' element={ < News /> }/>     

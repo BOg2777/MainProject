@@ -19,6 +19,7 @@
   font-size: 14px;
   line-height: 20px;
   color: #252525;
+  padding-left: 2px;
 }
 
 .numberAndMessengers {
@@ -34,6 +35,11 @@
   line-height: 20px;
   color: #252525;
 }
+
 .whatsapp,.telegram{
   cursor: pointer;
+}
+
+.telegram{
+  padding-right: 2px;
 }
