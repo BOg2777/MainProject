@@ -1,11 +1,12 @@
 import React from "react";
 
+import { Link } from 'react-router-dom'
+
 import logo from "img/Header/Logo.svg";
 import facebook from "img/Footer/facebook.svg";
 import twitter from "img/Footer/twitter.svg";
 import instagram from "img/Footer/inst.svg";
 import vk from "img/Footer/vk.svg";
-import arrow from "img/Footer/arrow.svg";
 import applePay from "img/Footer/apple.svg";
 import googlePay from "img/Footer/google.svg";
 import visa from "img/Footer/visa.svg";
@@ -14,6 +15,8 @@ import mir from "img/Footer/Mir.svg";
 import belcard from "img/Footer/Belcart.svg";
 
 import styles from "components/Footer/styles.module.css";
+
+import {ReactComponent as Arrow} from "img/Footer/arrow.svg";
 
 function Footer() {
   return (
@@ -38,7 +41,7 @@ function Footer() {
           <h4 className={styles.columnName}>Навигация</h4>
           <ul className={styles.navigationList}>
             <li>Каталог</li>
-            <li>Новости</li>
+            <Link to="/news" style={{ textDecoration: 'inherit', color:'inherit' }}>Новости</Link>
             <li>Акции</li>
           </ul>
         </div>
@@ -57,9 +60,7 @@ function Footer() {
           <h4 className={styles.columnNameLast}>Подпишись на рассылку</h4>
 
           <label className={styles.label}>Email <input type="email" placeholder="Введите ваш email"className={styles.search} /></label>
-          <button className={styles.inputBtn}>
-            <img src={arrow} alt="arrow" />
-          </button>
+          <button className={styles.inputBtn}> <Arrow/></button>
 
           <div className={styles.socialNetworks}>
             <img src={instagram} alt="instagram"></img>
@@ -72,7 +73,7 @@ function Footer() {
 
       <div className={styles.underFooter}>
         <span className={styles.copyright}>
-          © 2022 Li-ning Center. Все права защищены
+          © 2022 Li-ning Center. Все права защищены.
         </span>
         <span className={styles.payment}>
           <img src={applePay} alt="applePay" />
