@@ -43,7 +43,7 @@ function InfoAndOffers() {
       <div className={styles.clubProgram}>
         <img src={thunder} className={styles.thunder} alt="thunder"></img>
         <div className={styles.clubProgramInfo}>
-        <h3 className={styles.headlineclubProgram}>
+        <h3 className={styles.headlineClubProgram}>
            Клубная программа Li-Ning Center
         </h3>
         <p className={styles.descriptionClubProgram}>
