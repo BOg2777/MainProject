@@ -2,7 +2,7 @@ import React from "react";
 import { useState } from "react";
 import { Link } from 'react-router-dom'
 
-import NavBar from "components/NavBar/NavBar"
+import SideBar from "components/SideBar/SideBar"
 
 import logo from 'img/Header/Logo.svg'
 import search from 'img/Header/Search.svg'
@@ -14,14 +14,15 @@ import {ReactComponent as ShoppingBag} from 'img/Header/ShoppingBag.svg'
 import styles from 'components/Header/styles.module.css';
 
 function Header({setRegistration}) {
-  const [nav, setNav] = useState(false);
-  
+  const [sideBar, setSideBar] = useState(false);
+  const showSideBar = () => setSideBar(!sideBar);
+
   return (
     <>
       <header className={styles.header}>
           <nav className={styles.appNavigation}>
             <ul className={styles.nav}> 
-                <li className={styles.navList} onClick={() => setNav(!nav)}>
+                <li className={styles.navList} onClick={showSideBar}>
                 <Menu className={styles.menu}/>Каталог</li>
                 <Link to="/Stock" className={styles.navList}>Акции</Link>
                 <Link to="/News" className={styles.navList}>Новости</Link>
@@ -35,7 +36,7 @@ function Header({setRegistration}) {
           </ul>
         </nav>
       </header>
-      {nav ? <NavBar/> : ""}
+      {sideBar ? <SideBar/> : "" }
     </> 
   );
 }

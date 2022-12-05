@@ -1,0 +1,1 @@
+export {default as TShirts} from 'pages/catalog/badminton/MensClothing/T-shirts/T-shirts'
