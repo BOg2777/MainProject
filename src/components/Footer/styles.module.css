@@ -16,8 +16,7 @@
   height: 484px;
   background: #252525;
   border-radius: 24px;
-  margin: 0 1.2% 1.2% 1.2%;
-  width: 97.7%;
+  margin: 0 20px 20px 20px;
 }
 
 .footerContainer {
@@ -73,7 +72,6 @@
   order: 0;
   flex-grow: 0;
   color: #dfff4f;
-  width: 160px;
   height: 20px;
 }
 
@@ -250,7 +248,6 @@
 }
 
 .copyright {
-  width: 292px;
   height: 20px;
   font-family: "Hauora";
   font-style: normal;

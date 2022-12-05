@@ -1,0 +1,1 @@
+export {default as NavToCategories} from 'components/NavToCategories/NavToCategories'
