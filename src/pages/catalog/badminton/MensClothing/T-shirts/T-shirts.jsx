@@ -1,11 +1,11 @@
 import React from "react";
 
-import { TShirt } from "components";
+import { ProductItem } from "components";
 
 import logo from 'img/Mens-T-shirt/T-shirt_APLH217-1.png'
 import logo2 from 'img/Mens-T-shirt/T-shirt_KAWASAKIST-T1026BLUE.png'
 
-import styles from 'pages/catalog/badminton/MensClothing/T-shirts/styles.module.css';
+import styles from './styles.module.css';
 
 function TShirts() {
     console.log(logo);
@@ -16,7 +16,7 @@ function TShirts() {
     return (
         <div className={styles.wrapper}>
             {listProductT_shirts.map((item) => {
-                return <TShirt item={item} />
+                return <ProductItem item={item} />
             })}
         </div>
     );
