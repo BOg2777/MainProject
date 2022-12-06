@@ -19,9 +19,9 @@ function App() {
         <InfoAndOffers />
         <NavToCategories />
         <Routes>
-              <Route path="/catalog/badminton/men's_clothing/T-shirts" element={ < TShirts /> } />
-              <Route path='/News' element={ < News /> }/>     
-            </Routes>
+          <Route path='/News' element={ < News /> }/>     
+          <Route path="/catalog/badminton/men's_clothing/T-shirts" element={ <TShirts /> } />
+        </Routes>
         <Footer/>
     </div>
   );

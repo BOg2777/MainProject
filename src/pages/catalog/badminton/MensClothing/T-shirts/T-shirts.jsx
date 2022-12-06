@@ -1,6 +1,6 @@
 import React from "react";
 
-import { ProductItem } from "components";
+import { MaketPage } from "components";
 
 import logo from 'img/Mens-T-shirt/T-shirt_APLH217-1.png'
 import logo2 from 'img/Mens-T-shirt/T-shirt_KAWASAKIST-T1026BLUE.png'
@@ -8,17 +8,29 @@ import logo2 from 'img/Mens-T-shirt/T-shirt_KAWASAKIST-T1026BLUE.png'
 import styles from './styles.module.css';
 
 function TShirts() {
-    console.log(logo);
-    let listProductT_shirts = [
-        {img: logo, description: 'Поло мужское LI-NING', model: 'APLH217-1', price: '950 ₽'},
-        {img: logo2, description: 'Мужская футболка KAWASAKI', model: 'ST-T1026 BLUE', price: '1 600 ₽'}];
-
+    let listProduct_TShirts = [
+            {img: logo, description: 'Поло мужское LI-NING', model: 'APLH217-1', price: '950 ₽'},
+            {img: logo2, description: 'Мужская футболка KAWASAKI', model: 'ST-T1026 BLUE', price: '1 600 ₽'},
+            {img: logo, description: 'Поло мужское LI-NING', model: 'APLH217-1', price: '950 ₽'},
+            {img: logo, description: 'Поло мужское LI-NING', model: 'APLH217-1', price: '950 ₽'},
+            {img: logo, description: 'Поло мужское LI-NING', model: 'APLH217-1', price: '950 ₽'},
+            {img: logo, description: 'Поло мужское LI-NING', model: 'APLH217-1', price: '950 ₽'},
+            {img: logo, description: 'Поло мужское LI-NING', model: 'APLH217-1', price: '950 ₽'},
+            {img: logo, description: 'Поло мужское LI-NING', model: 'APLH217-1', price: '950 ₽'},
+            {img: logo, description: 'Поло мужское LI-NING', model: 'APLH217-1', price: '950 ₽'},
+            {img: logo, description: 'Поло мужское LI-NING', model: 'APLH217-1', price: '950 ₽'},
+            {img: logo, description: 'Поло мужское LI-NING', model: 'APLH217-1', price: '950 ₽'},
+            {img: logo, description: 'Поло мужское LI-NING', model: 'APLH217-1', price: '950 ₽'},
+            {img: logo, description: 'Поло мужское LI-NING', model: 'APLH217-1', price: '950 ₽'},
+            {img: logo, description: 'Поло мужское LI-NING', model: 'APLH217-1', price: '950 ₽'},
+            {img: logo, description: 'Поло мужское LI-NING', model: 'APLH217-1', price: '950 ₽'},
+            {img: logo, description: 'Поло мужское LI-NING', model: 'APLH217-1', price: '950 ₽'},
+            {img: logo, description: 'Поло мужское LI-NING', model: 'APLH217-1', price: '950 ₽'},
+        ];
+        let title = 'Мужские футболки';
+        let src = 'Главная-Каталог-Бадминтон-Мужские одежды-Футболки';
     return (
-        <div className={styles.wrapper}>
-            {listProductT_shirts.map((item) => {
-                return <ProductItem item={item} />
-            })}
-        </div>
+        <MaketPage listProductX={listProduct_TShirts} title={title} src={src}/>
     );
   }
   
