@@ -7,9 +7,9 @@ import logoVk from 'img/Registration/Vk-fill.png';
 import logoYandex from 'img/Registration/Yandex.png';
 import Cross from 'img/Registration/Vector.png';
 
-import styles from 'components/Input/styles.module.css';
+import styles from 'components/SignIn/styles.module.css';
 
-function InputUser({registration , setRegistration, inputShow, setInputShow}){
+function SignIn({registration , setRegistration, inputShow, setInputShow}){
     const [register, setRegister] = useState(() => {
         return {
             email: "",
@@ -50,7 +50,7 @@ function InputUser({registration , setRegistration, inputShow, setInputShow}){
                     <div>
                         <div className={styles.crossWrapeer} onClick={()=>setInputShow(!inputShow)}><img src={Cross} className={styles.cross}/></div>
                     </div>
-                    <h2 className={styles.title}>Login:</h2>
+                    <h2 className={styles.title}>Войти:</h2>
                     <div className={styles.wrapperImg}>
                         <div className={styles.img}><img src= {logoApple} className={styles.logo} /></div>
                         <div className={styles.img}><img src= {logoFacebook} className={styles.logo}/></div>
@@ -60,8 +60,8 @@ function InputUser({registration , setRegistration, inputShow, setInputShow}){
                     </div>
                     <h1 className={styles.descriptionIcons}>или зарегистрируйтесь с помощью email</h1>
                     <form  className={styles.form}>
-                        {Entry('Email', 'Введите Ваш адрес эл. почты')}
-                        {Entry('Password', 'Введите Ваш пароль')}
+                        {Entry('Email', '  Введите Ваш адрес эл. почты')}
+                        {Entry('Password', '  Введите Ваш пароль')}
                         <input type="submit" value='Войти' className={styles.btn}/>
                     </form>
                     <hr className={styles.line}></hr>
@@ -72,4 +72,4 @@ function InputUser({registration , setRegistration, inputShow, setInputShow}){
         )
     }
 }
-export default InputUser;
+export default SignIn;
