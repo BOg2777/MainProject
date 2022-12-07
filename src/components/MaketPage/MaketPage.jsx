@@ -2,6 +2,8 @@ import React from "react";
 
 import { ProductItem, Pagination } from "components";
 
+import logo from 'img/Mens-T-shirt/Ellipse 36.png'
+
 import styles from './styles.module.css';
 
 function MaketPage({listProductX, title, src}) {
@@ -30,11 +32,16 @@ function MaketPage({listProductX, title, src}) {
     // Путь страницы
     // let src = 'Главная-Каталог-Бадминтон-Мужские одежды-Футболки';
 
-
     return (
         <div>
             <div className={styles.wrapperSrc}>
-                <div className={styles.src}>{src}</div>
+                    {src.map((item, id)=>{
+                        if(id != src.length -1){
+                            return <div className={styles.src}>{item} <img className={styles.srcImg} src={logo} /></div>
+                        }else{
+                            return <div className={styles.src}>{item}</div>
+                        }
+                    })}
             </div>
             <div className={styles.wrapperSearch}>
                 <div className={styles.title}>{title}</div>

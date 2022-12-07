@@ -30,7 +30,11 @@ function TShirts() {
             {img: img10, description: 'Поло мужское LI-NING', model: 'APLH217-1', price: '950 '},
         ];
         let title = 'Мужские футболки';
-        let src = 'Главная-Каталог-Бадминтон-Мужские одежды-Футболки';
+        let src = ['Главная',
+        'Каталог',
+        'Бадминтон',
+        'Мужские одежды',
+        'Футболки'];
     return (
         <MaketPage listProductX={listProduct_TShirts} title={title} src={src}/>
     );

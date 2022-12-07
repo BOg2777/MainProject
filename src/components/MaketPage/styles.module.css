@@ -48,6 +48,20 @@
     margin: 0px 20px 60px 20px;
 }
 .wrapperSrc{
+    display: flex;
     margin-top: 26px;
     margin-left: 20px;
+}
+.src{
+    font-family: 'Hauora';
+    font-style: normal;
+    color: #949494;
+    padding-right: 8px;
+}
+.srcImg{
+    height: 8px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-left: 8px;
 }
