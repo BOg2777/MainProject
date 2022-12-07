@@ -1,9 +1,6 @@
 import React from "react";
 
-import { ProductItem } from "components";
-import Header from "components/Header/Header"
-import AboveHeader from "components/AboveHeader/AboveHeader"
-import Footer from "components/Footer/Footer"
+import { ProductItem, Pagination } from "components";
 
 import styles from './styles.module.css';
 
@@ -36,8 +33,6 @@ function MaketPage({listProductX, title, src}) {
 
     return (
         <div>
-            <AboveHeader />
-            <Header />
             <div className={styles.wrapperSrc}>
                 <div className={styles.src}>{src}</div>
             </div>
@@ -54,10 +49,9 @@ function MaketPage({listProductX, title, src}) {
                     return <ProductItem item={item} />
                 })}
             </div>
-            <Footer />
+            <Pagination />
         </div>
     );
   }
   
   export default MaketPage;
-  //git push --set-upstream origin 'FE-17-Add-MaketPage(samplePage)'
