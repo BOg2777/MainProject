@@ -33,7 +33,7 @@ function TShirts() {
         let src = ['Главная',
         'Каталог',
         'Бадминтон',
-        'Мужские одежды',
+        'Мужская одежда',
         'Футболки'];
     return (
         <MaketPage listProductX={listProduct_TShirts} title={title} src={src}/>
