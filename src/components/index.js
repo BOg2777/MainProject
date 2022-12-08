@@ -9,3 +9,5 @@ export {SignIn} from 'components/SignIn'
 export {InfoAndOffers} from 'components/InfoAndOffers'
 export {NavToCategories} from 'components/NavToCategories'
 export {SportCategory} from 'components/SportCategory'
+export {Carousel} from 'components/Carousel'
+
