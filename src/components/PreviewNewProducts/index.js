@@ -1,0 +1,1 @@
+export {default as PreviewNewProducts} from 'components/PreviewNewProducts/PreviewNewProducts'
