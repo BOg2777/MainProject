@@ -6,6 +6,7 @@ import { Header,AboveHeader,Footer, SignUp,SignIn, InfoAndOffers,NavToCategories
 import { TShirts,News } from "pages";
 
 import 'App.css';
+import { SingleNewsPage } from 'pages/SingleNewsPage';
 
 function App() {
   const [registration, setRegistration] = useState(false);
@@ -16,13 +17,14 @@ function App() {
         <SignIn registration={registration} setRegistration={setRegistration} inputShow={inputShow} setInputShow={setInputShow} />
         <AboveHeader />
         <Header setRegistration={setRegistration} />
-        <InfoAndOffers />
-        <NavToCategories />
-        <Routes>
+        {/* <InfoAndOffers />
+        <NavToCategories /> */}
+            <Routes>
               <Route path="/catalog/badminton/men's_clothing/T-shirts" element={ < TShirts /> } />
-              <Route path='/News' element={ < News /> }/>     
+              <Route path='/News' element={ < News /> }/>
+              <Route path='/News/id' element={ < SingleNewsPage /> }/>     
             </Routes>
-            <Carousel />
+            {/* <Carousel /> */}
         <Footer/>
     </div>
   );

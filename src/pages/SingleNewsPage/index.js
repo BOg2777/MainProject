@@ -1,0 +1,1 @@
+export {default as SingleNewsPage} from 'pages/SingleNewsPage/SingleNewsPage'
