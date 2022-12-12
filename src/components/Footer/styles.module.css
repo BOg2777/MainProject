@@ -174,10 +174,9 @@
   appearance: none;
   outline: none;
   color: #dfff4f;
-
 }
 
-.inputBtn{
+.inputBtn {
   position: relative;
   bottom: 7.5%;
   left: 78%;

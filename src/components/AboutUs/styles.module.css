@@ -1,0 +1,105 @@
+.aboutUs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  gap: 32px;
+  height: 512px;
+  margin: 160px 20px 130px 20px;
+}
+
+.headline {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 48px;
+  font-family: "Actay Wide";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  text-align: center;
+  color: #252525;
+  padding-bottom: 32px;
+}
+
+.o {
+  text-shadow: 0 0 7px rgba(255, 255, 255, 0.3),
+    0 0 3px rgba(255, 255, 255, 0.3);
+}
+
+.animation {
+  height: 50px;
+  overflow: hidden;
+  margin-left: 2px;
+}
+
+.animation > div > div {
+  padding: 0 0.45rem;
+  height: 2.81rem;
+  margin-bottom: 2.81rem;
+  display: inline-block;
+  border-radius: 5px;
+}
+
+.animation div:first-child {
+  animation: text-animation 8s infinite;
+}
+
+.first div {
+  background-color: #ff6347;
+}
+.second div {
+  background-color: #dfff4f;
+}
+.third div {
+  background-color: #252525;
+}
+
+@keyframes text-animation {
+  0% {
+    margin-top: 0;
+  }
+  10% {
+    margin-top: 0;
+  }
+  20% {
+    margin-top: -5.62rem;
+  }
+  30% {
+    margin-top: -5.62rem;
+  }
+  40% {
+    margin-top: -11.24rem;
+  }
+  60% {
+    margin-top: -11.24rem;
+  }
+  70% {
+    margin-top: -5.62rem;
+  }
+  80% {
+    margin-top: -5.62rem;
+  }
+  90% {
+    margin-top: 0;
+  }
+  100% {
+    margin-top: 0;
+  }
+}
+
+.first {
+  padding-right: 50%;
+}
+
+.text {
+  width: 70%;
+  font-family: "Hauora";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 34px;
+  color: #252525;
+}
