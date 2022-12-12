@@ -1,4 +1,5 @@
 import React from "react";
+import { Pagination, PaginationItem } from '@mui/material';
 
 import styles from './styles.module.css';
 
@@ -6,12 +7,12 @@ import styles from './styles.module.css';
 
 
 
-function Pagination({ item }) {
+function Paginat({ item }) {
   return (
     <div className={styles.wrapper}>
-        
+        <Pagination count={10} variant="outlined" color="secondary" showFirstButton showLastButton />
     </div>
   );
 }
 
-export default Pagination;
+export default Paginat;
