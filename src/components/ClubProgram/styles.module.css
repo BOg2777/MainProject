@@ -8,7 +8,6 @@
 .headline {
   height: 48px;
   padding-bottom: 40px;
-
   font-family: "Actay Wide";
   font-style: normal;
   font-weight: 700;
@@ -20,7 +19,7 @@
 .descripcion {
   width: 692px;
   height: 160px;
-  font-family: "Hauora";
+  /* font-family: "Hauora"; */
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -46,7 +45,7 @@
   height: 120px;
   left: 20px;
   top: 488px;
-  font-family: "Hauora";
+  /* font-family: "Hauora"; */
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -59,7 +58,7 @@
 .contactUs {
   width: 548px;
   height: 60px;
-  font-family: "Hauora";
+  /* font-family: "Hauora"; */
   font-style: normal;
   font-weight: 500;
   font-size: 14px;

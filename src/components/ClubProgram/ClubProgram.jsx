@@ -29,7 +29,7 @@ function ClubProgram() {
         <li className={styles.list}>Наличная и безналичная оплата.</li>
       </ul>
       <span className={styles.contactUs}>Позвоните нам по телефону 
-      <span className={styles.green}>+7 495 979 61 31</span> <br/>
+      <span className={styles.green}> +7 495 979 61 31</span> <br/>
 Напишите нам по электронной почте  <span className={styles.green}>info@lining.center </span> <br/>
 и наши менеджеры с удовольствием расскажут вам о нашей клубной программе.</span>
 </div>
