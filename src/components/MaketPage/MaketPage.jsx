@@ -1,6 +1,6 @@
 import React from "react";
 
-import { ProductItem, Pagination } from "components";
+import { ProductItem, Paginat } from "components";
 
 import logo from 'img/Mens-T-shirt/Ellipse 36.png'
 
@@ -56,7 +56,7 @@ function MaketPage({listProductX, title, src}) {
                     return <ProductItem item={item} />
                 })}
             </div>
-            <Pagination />
+            <Paginat/>
         </div>
     );
   }

@@ -1,1 +1,1 @@
-export {default as Pagination} from 'components/Pagination/Pagination'
+export {default as Paginat} from 'components/Pagination/Pagination'
