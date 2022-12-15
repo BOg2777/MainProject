@@ -17,8 +17,8 @@ function Home() {
         <SignUp registration={registration} setRegistration={setRegistration} inputShow={inputShow} setInputShow={setInputShow}/>
         <SignIn registration={registration} setRegistration={setRegistration} inputShow={inputShow} setInputShow={setInputShow} /> 
         <AboveHeader />
-        <Header setRegistration={setRegistration} />
-        <InfoAndOffers />
+        <Header setInputShow={setInputShow} />
+        <InfoAndOffers setRegistration={setRegistration} />
         <NavToCategories />
         <PreviewNewProducts />
         <Carousel />
