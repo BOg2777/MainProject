@@ -13,6 +13,14 @@ import styles from 'components/SignUp/styles.module.css';
 
 function SignUp({registration , setRegistration, inputShow, setInputShow}){
 
+    let passw=  /^[A-Za-z]\w{7,14}$/;
+
+    const EMAIL_REGEXP = /^(([^<>()[\].,;:\s@"]+(\.[^<>()[\].,;:\s@"]+)*)|(".+"))@(([^<>()[\].,;:\s@"]+\.)+[^<>()[\].,;:\s@"]{2,})$/iu;
+
+    function isEmailValid(value) {
+        return EMAIL_REGEXP.test(value);
+    }
+
     const [register, setRegister] = useState(() => {
         return {
             email: "",
@@ -35,12 +43,12 @@ function SignUp({registration , setRegistration, inputShow, setInputShow}){
     }
     const submitChackin = (event) => {
         event.preventDefault();
-        if(!validator.isEmail(register.email)) {
+        if(isEmailValid(register.email)) {
             alert("You did not enter email")
-        } else if(register.password !== register.password2) {
+        } else if(register.password.match(passw)) {
+            alert("Password must consist of one lowercase, uppercase letter and number, at least 8 characters");
+        } else if(register.password === register.password2) {
             alert("Repeated password incorrectly")
-        } else if(!validator.isStrongPassword(register.password, {minSymbols: 0})) {
-            alert("Password must consist of one lowercase, uppercase letter and number, at least 8 characters")
         } else {
             console.log('Все ок');
         }
