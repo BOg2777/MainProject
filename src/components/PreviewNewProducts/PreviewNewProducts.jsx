@@ -43,7 +43,10 @@ function DisplayItems({ Product }) {
 function PreviewNewProducts() {
   const [category, setCategory] = useState({ category: "men" });
 
+  const [clicked, setClicked] = useState(true);
+
   return (
+    
     <div className={styles.previewProductsNew}>
       <div className={styles.newProducts}>
         <span className={styles.headline}>Новые поступления</span>
@@ -53,9 +56,10 @@ function PreviewNewProducts() {
       </div>
 
       <div className={styles.filters}>
-        <button className={styles.filterButton} autoFocus onClick={() => setCategory({ category: "men" })}>Для мужчин</button>
-        <button className={styles.filterButton} onClick={() => setCategory({ category: "women" })}>Для женщин</button>
-        <button className={styles.filterButton} onClick={() => setCategory({ category: "accessories" })}> Аксессуары</button>
+      
+        <button  className={clicked ? styles.clickedButton : styles.filterButton } onClick={() => setCategory({ category: "men" })}>Для мужчин</button>
+        <button className={styles.filterButton} onClick={() => {setCategory({ category: "women" }); setClicked(false)}}>Для женщин</button>
+        <button className={styles.filterButton} onClick={() => {setCategory({ category: "accessories" }); setClicked(false)}}> Аксессуары</button>
       </div>
 
       <div className={styles.products}>
@@ -70,3 +74,4 @@ function PreviewNewProducts() {
 }
 
 export default PreviewNewProducts;
+

@@ -32,8 +32,8 @@ function Footer() {
             <li className={styles.contactsInfo}> г. Москва, пр-т Буденного, д. 53, к. 2</li>
           </ul>
           <ul className={styles.termsAndConditions}>
-            <li> Политика конфиденциальности</li>
-            <li> Условия пользования</li>
+          <Link to="/terms+conditions" style={{ textDecoration: 'inherit', color:'inherit' }}> Политика конфиденциальности</Link>
+            <Link to="/policies" style={{ textDecoration: 'inherit', color:'inherit' }}> Условия пользования</Link>
           </ul>
         </div>
 
@@ -51,7 +51,7 @@ function Footer() {
           <ul className={styles.informationList}>
             <li>Контакты</li>
             <li>Оплата и доставка</li>
-            <li>Гарантия возврата</li>
+            <Link to="/returns+refunds" style={{ textDecoration: 'inherit', color:'inherit' }}>Гарантия возврата</Link>
             <li>Вопросы и ответы</li>
           </ul>
         </div>
