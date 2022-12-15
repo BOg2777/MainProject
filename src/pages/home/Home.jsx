@@ -4,9 +4,7 @@ import { useState, useEffect } from "react";
 
 import { Header,AboveHeader,Footer, SignUp,SignIn, InfoAndOffers,NavToCategories,Carousel,PreviewNews,PreviewNewProducts,PreviewPopularProducts,AboutUs } from "components";
 
-function Home() {
-  const [registration, setRegistration] = useState(false);
-  const [inputShow, setInputShow] = useState(false);
+function Home({setDataBase,dataBase, registration,setRegistration,inputShow,setInputShow}) {
   const { pathname } = useLocation();
 
   useEffect(() => {window.scrollTo(0, 0);}, [pathname]);
@@ -14,8 +12,8 @@ function Home() {
   return (
     
     <div>
-        <SignUp registration={registration} setRegistration={setRegistration} inputShow={inputShow} setInputShow={setInputShow}/>
-        <SignIn registration={registration} setRegistration={setRegistration} inputShow={inputShow} setInputShow={setInputShow} /> 
+        <SignUp registration={registration} setRegistration={setRegistration} inputShow={inputShow} setInputShow={setInputShow} setDataBase={setDataBase} dataBase={dataBase}/>
+        <SignIn registration={registration} setRegistration={setRegistration} inputShow={inputShow} setInputShow={setInputShow} setDataBase={setDataBase} dataBase={dataBase}/> 
         <AboveHeader />
         <Header setInputShow={setInputShow} />
         <InfoAndOffers setRegistration={setRegistration} />
