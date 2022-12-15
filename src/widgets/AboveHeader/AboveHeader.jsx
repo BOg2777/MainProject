@@ -3,7 +3,7 @@ import React from "react";
 import whatsapp from "img/Header/Whatsapp.svg";
 import telegram from "img/Header/Telegram.svg";
 
-import styles from "components/AboveHeader/styles.module.css";
+import styles from "./styles.module.css";
 
 function AboveHeader() {
   return (
@@ -14,8 +14,12 @@ function AboveHeader() {
       </div>
       <div className={styles.numberAndMessengers}>
         <span>МСК: +7 (495) 979-61-31</span>
-        <span className={styles.whatsapp}><img src={whatsapp} alt="whatsapp"/></span>
-        <span className={styles.telegram}><img src={telegram} alt="telegram"/></span>
+        <span className={styles.whatsapp}>
+          <img src={whatsapp} alt="whatsapp" />
+        </span>
+        <span className={styles.telegram}>
+          <img src={telegram} alt="telegram" />
+        </span>
       </div>
     </div>
   );
