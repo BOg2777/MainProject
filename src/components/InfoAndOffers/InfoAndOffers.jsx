@@ -7,15 +7,13 @@ import userIcon from "img/Header/UserIcon.svg";
 import thunder from "img/Header/Thunder.svg";
 
 
-function InfoAndOffers() {
+function InfoAndOffers({setRegistration}) {
 
   const navigate = useNavigate();
 
   const navigateToClubProgram = () => {
     navigate('/clubProgram');
   };
-
-function InfoAndOffers({setRegistration}) {
 
   return (
     <div className={styles.information}>
