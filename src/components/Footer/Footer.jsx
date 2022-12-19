@@ -49,10 +49,10 @@ function Footer() {
         <div className={styles.information}>
           <h4 className={styles.columnName}>Информация</h4>
           <ul className={styles.informationList}>
-            <li>Контакты</li>
+          <Link to="/contacts" style={{ textDecoration: 'inherit', color:'inherit' }}>Контакты</Link>
             <li>Оплата и доставка</li>
             <Link to="/returns+refunds" style={{ textDecoration: 'inherit', color:'inherit' }}>Гарантия возврата</Link>
-            <li>Вопросы и ответы</li>
+            <Link to="/faq" style={{ textDecoration: 'inherit', color:'inherit' }}>Вопросы и ответы</Link>
           </ul>
         </div>
 
