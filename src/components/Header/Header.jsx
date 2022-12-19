@@ -13,7 +13,7 @@ import {ReactComponent as ShoppingBag} from 'img/Header/ShoppingBag.svg'
 
 import styles from 'components/Header/styles.module.css';
 
-function Header({setRegistration}) {
+function Header({setInputShow,isSignIn}) {
   const [sideBar, setSideBar] = useState(false);
   const showSideBar = () => setSideBar(!sideBar);
 
@@ -24,14 +24,14 @@ function Header({setRegistration}) {
             <ul className={styles.nav}> 
                 <li className={styles.navList} onClick={showSideBar}>
                 <Menu className={styles.menu}/>Каталог</li>
-                <Link to="/Stock" className={styles.navList}>Акции</Link>
+                <Link to="/disconts" className={styles.navList}>Акции</Link>
                 <Link to="/News" className={styles.navList}>Новости</Link>
             </ul>
-            <Link to="/Main" className={styles.logo}><img src={logo} ></img></Link> 
+            <Link to="/home" className={styles.logo}><img src={logo} ></img></Link> 
             <ul className={styles.userBar}>
                 <li className={styles.headerSearch}> <img src={search} alt="search"/> <input type="text" placeholder="Поиск" className={styles.search}/></li>
                 <li className={styles.favourites}><Favourite className={styles.favourite}/> </li>
-                <li className={styles.user} onClick={()=>setRegistration(true)}><User className={styles.userImg}/></li>
+                <li className={styles.user} onClick={()=>setInputShow(true)}><User className={styles.userImg}/></li>
                 <li className={styles.shoppingBag}><ShoppingBag className={styles.shoppingBagImg}/></li>
           </ul>
         </nav>

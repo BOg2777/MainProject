@@ -86,6 +86,7 @@
   flex: none;
   order: 3;
   flex-grow: 0;
+  cursor: pointer;
 }
 
 .benefits {
@@ -148,6 +149,7 @@
   flex: none;
   order: 1;
   flex-grow: 0;
+  cursor: pointer;
 }
 
 .clubProgram {
@@ -214,5 +216,5 @@
   flex: none;
   order: 3;
   flex-grow: 0;
+  cursor: pointer;
 }
-
