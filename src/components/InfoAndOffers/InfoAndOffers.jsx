@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate } from 'react-router-dom'
 
 import styles from 'components/InfoAndOffers/styles.module.css';
 
@@ -6,9 +7,16 @@ import userIcon from "img/Header/UserIcon.svg";
 import thunder from "img/Header/Thunder.svg";
 
 
+function InfoAndOffers() {
 
+  const navigate = useNavigate();
+
+  const navigateToClubProgram = () => {
+    navigate('/clubProgram');
+  };
 
 function InfoAndOffers({setRegistration}) {
+
   return (
     <div className={styles.information}>
 
@@ -51,7 +59,7 @@ function InfoAndOffers({setRegistration}) {
         Li-Ning Center разработал уникальную программу, позволяющую существенно экономить средства и 
         время на покупку бадминтонного инвентаря. 
         </p>
-        <button className={styles.buttonClubProgram}>Подробнее</button>
+        <button className={styles.buttonClubProgram} onClick={navigateToClubProgram}>Подробнее</button>
       </div>
       </div>
 

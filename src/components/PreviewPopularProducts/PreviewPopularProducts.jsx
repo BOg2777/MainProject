@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState} from "react";
 
 import styles from "components/PreviewPopularProducts/styles.module.css";
 
@@ -43,19 +43,23 @@ function DisplayItems({ Product }) {
 function PreviewPopularProducts() {
   const [category, setCategory] = useState({ category: "women" });
 
+  const [clicked, setClicked] = useState(true);
+
+
   return (
     <div className={styles.previewPopularProducts}>
       <div className={styles.popularProducts}>
-        <span className={styles.headline}>Новые поступления</span>
+        <span className={styles.headline}>Популярные товары</span>
         <div className={styles.btn}>
           <button className={styles.button}>Смотреть каталог</button>
         </div>
       </div>
 
+     
       <div className={styles.filters}>
-        <button className={styles.filterButton} onClick={() => setCategory({ category: "men" })}> Для мужчин </button>
-        <button autoFocus className={styles.filterButton} onClick={() => setCategory({ category: "women" })}> Для женщин </button>
-        <button className={styles.filterButton} onClick={() => setCategory({ category: "accessories" })}> Аксессуары </button>
+        <button className={styles.filterButton} onClick={() => {setCategory({ category: "men" }); setClicked(false)}}> Для мужчин </button>
+        <button className={clicked ? styles.clickedButton : styles.filterButton } onClick={() => setCategory({ category: "women" })}> Для женщин </button>
+        <button className={styles.filterButton} onClick={() => {setCategory({ category: "accessories" }); setClicked(false)}}> Аксессуары </button>
       </div>
 
       <div className={styles.products}>
@@ -65,7 +69,8 @@ function PreviewPopularProducts() {
           {return <DisplayItems Product={item}/>})}
       </div>
     </div>
-  );
+  )
+  ;
 }
 
 export default PreviewPopularProducts;
