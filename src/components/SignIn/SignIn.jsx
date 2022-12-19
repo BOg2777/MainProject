@@ -9,32 +9,39 @@ import Cross from 'img/Registration/Vector.svg';
 
 import styles from 'components/SignIn/styles.module.css';
 
-function SignIn({registration , setRegistration, inputShow, setInputShow}){
+function SignIn({registration , setRegistration, inputShow, setInputShow,dataBase,isSignIn,setIsSignIn}){
     const [register, setRegister] = useState(() => {
         return {
-            email: "",
-            password: "",
-            passwordRepeat: "",
+            Email: "",
+            Password: "",
+            PasswordRepeat: "",
         }
     }) 
 
-    function changeInputRegister  (event, name) {
+    function changeInputRegister  (event) {
         setRegister((prev) => {
             return {
                 ...prev,
-                [event.target[name]]: event.target.value,
+                [event.target.name]: event.target.value,
             }
         })
     }
-
+    function submitChackin(){
+        dataBase.forEach((element) => {
+            if(element.email == register.Email && element.password == register.Password){
+                alert('True');
+            }else{alert('false')}
+        });
+    }
     function Entry(name,placeholder){
+        console.log(register,dataBase)
         return (<div className={styles.nameInputWrapper}><p className={styles.nameInput}>{name}*: </p><input 
-        type={name}
+        type={String(name)}
         placeholder={placeholder}
-        id={name}
-        name={name}
-        value={register[name]}
-        onChange={(event)=>changeInputRegister(event,name)}
+        id={String(name)}
+        name={String(name)}
+        value={register[String(name)]}
+        onChange={(event)=>changeInputRegister(event)}
         className = {styles.Input}/></div>
         )
     };
@@ -59,7 +66,7 @@ function SignIn({registration , setRegistration, inputShow, setInputShow}){
                         <div className={styles.img}><img src= {logoYandex} className={styles.logo}/></div>
                     </div>
                     <h1 className={styles.descriptionIcons}>или зарегистрируйтесь с помощью email</h1>
-                    <form  className={styles.form}>
+                    <form  className={styles.form} onSubmit={submitChackin}>
                         {Entry('Email', '  Введите Ваш адрес эл. почты')}
                         {Entry('Password', '  Введите Ваш пароль')}
                         <input type="submit" value='Войти' className={styles.btn}/>

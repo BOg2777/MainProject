@@ -15,6 +15,8 @@ function InfoAndOffers() {
     navigate('/clubProgram');
   };
 
+function InfoAndOffers({setRegistration}) {
+
   return (
     <div className={styles.information}>
 
@@ -42,7 +44,7 @@ function InfoAndOffers() {
           Зарегистрируйтесь в нашем интернет-магазине и пользуйтесь всеми
           преимуществами, акциями и специальными предложениями для Вас!
         </p>
-        <button className={styles.buttonBenefits}>Зарегистрироваться</button>
+        <button className={styles.buttonBenefits} onClick={()=>setRegistration(true)}>Зарегистрироваться</button>
       </div>
       </div>
 

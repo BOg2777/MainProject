@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import validator from 'validator';
 
 import logoApple from 'img/Registration/Apple.svg';
 import logoFacebook from 'img/Registration/Facebook.svg';
@@ -11,48 +10,68 @@ import Cross from 'img/Registration/Vector.svg';
 import styles from 'components/SignUp/styles.module.css';
 
 
-function SignUp({registration , setRegistration, inputShow, setInputShow}){
+function SignUp({registration , setRegistration, inputShow, setInputShow, setDataBase, dataBase,isSignIn, setIsSignIn}){
 
-    const [register, setRegister] = useState(() => {
-        return {
-            email: "",
-            password: "",
-            passwordRepeat: "",
-        }
+    let passw=  /^[A-Za-z]\w{7,14}$/;
+
+    const EMAIL_REGEXP = /^(([^<>()[\].,;:\s@"]+(\.[^<>()[\].,;:\s@"]+)*)|(".+"))@(([^<>()[\].,;:\s@"]+\.)+[^<>()[\].,;:\s@"]{2,})$/iu;
+
+    function isEmailValid(value) {
+        return EMAIL_REGEXP.test(value);
+    }
+    function isPasswordValid(value) {
+        return passw.test(value);
+    }
+
+    const [register, setRegister] = useState( {
+            Email: "",
+            Password: "",
+            PasswordRepeat: "",
     }) 
     function OpenInput(){
         setRegistration(!registration);
         setInputShow(!inputShow);
     }
 
-    function changeInputRegister  (event, name) {
+    function changeInputRegister  (event) {
         setRegister((prev) => {
             return {
                 ...prev,
-                [event.target[name]]: event.target.value,
+                [event.target.name]: event.target.value,
             }
         })
     }
     const submitChackin = (event) => {
         event.preventDefault();
-        if(!validator.isEmail(register.email)) {
+        if(!isEmailValid(register.Email)) {
             alert("You did not enter email")
-        } else if(register.password !== register.password2) {
+        } else if(!isPasswordValid(register.Password)) {
+            alert("Password must consist of one lowercase, uppercase letter and number, at least 8 characters");
+        } else if(register.Password === register.Password2) {
             alert("Repeated password incorrectly")
-        } else if(!validator.isStrongPassword(register.password, {minSymbols: 0})) {
-            alert("Password must consist of one lowercase, uppercase letter and number, at least 8 characters")
         } else {
             console.log('Все ок');
-        }
+            setDataBase((prev)=>{
+                return(
+                   prev.push({email:register.Email,password:register.Password})
+            )});
+        };
+        setRegistration(!registration);
+        setRegister({
+            Email: "",
+            Password: "",
+            PasswordRepeat: "",
+        });
+        setIsSignIn(true);
     }
     function Input(name,placeholder, repeat=''){
         return (<div className={styles.nameInputWrapper}><p className={styles.nameInput}>{repeat}  {name}*: </p><input 
-        type={name}
+        type={String(name)}
         placeholder={placeholder}
-        id={String(repeat + name)}
-        name={String(repeat + name)}
-        value={register[name+repeat]}
-        onChange={(event)=>changeInputRegister(event,String(name+repeat))}
+        id={String(name+repeat)}
+        name={String(name+repeat)}
+        value={register[String(name+repeat)]}
+        onChange={(event)=>changeInputRegister(event)}
         className = {styles.Input}/></div>
         )
     };
