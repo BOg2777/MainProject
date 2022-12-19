@@ -5,27 +5,34 @@
     font-style: normal;
   }
 
+@font-face {
+    font-family: 'Hauora';
+    src: url('../../fonts/Hauora/Hauora-Medium.ttf') format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}  
+
 .wrapper{
-    padding: 20px 20px;
+    padding: 24px 20px;
 }
   
 .title{
-    font-family: 'Actay Wide';
+    display: flex;
+    margin-bottom: 30px;
 
+    font-family: 'Actay Wide';
     font-size: 40px;
     font-weight: 700;
-
-    margin-bottom: 30px;
 }
 
 .filter{
     display: flex;
-    /* align-items: center; */
     gap: 5px;
     margin-bottom: 25px;
 }
 
 .input{
+    border: 1px solid #252525;
     border-radius: 40px;
     padding: 10px;
     outline: none;
@@ -34,7 +41,7 @@
 }
 
 .filterCategory{
-    border: 1px solid black;
+    border: 1px solid #252525;
     border-radius: 40px;
     padding: 10px;
     width: 390px;
@@ -42,9 +49,41 @@
 }
 
 .listItems{
-
     display: flex;
     flex-wrap: wrap;
     gap: 16px;
 }
 
+.icon{
+    padding: 5px;
+}
+
+.currentPath{
+    display: flex;
+    gap: 6px;
+    margin-bottom: 60px;
+}
+
+.previousPathText{
+    font-family: 'Hauora';
+    font-size: 12px;
+    line-height: 12px;
+    color: #949494;
+}
+
+.currentPathText{
+    font-family: 'Hauora';
+    font-size: 12px;
+    line-height: 12px;
+    color: #252525;
+}
+
+.newsAmount{
+    margin-bottom: 36px;
+
+    font-family: 'Hauora';
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 12px;
+    color: #949494;
+}

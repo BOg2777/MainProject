@@ -24,6 +24,8 @@
     border-radius: 24px;
 
     transition: all 0.3s ease-in-out;
+    text-decoration: none;
+    color: #252525;
 }
 
 .wrapperItem:hover{
