@@ -22,7 +22,7 @@ function App() {
             <Routes>
               <Route path="/catalog/badminton/men's_clothing/T-shirts" element={ < TShirts /> } />
               <Route path='/News' element={ < News /> }/>
-              <Route path='/News/id' element={ < SingleNewsPage /> }/>     
+              <Route path='/News/:id' element={ < SingleNewsPage /> }/>     
             </Routes>
             {/* <Carousel /> */}
         <Footer/>
