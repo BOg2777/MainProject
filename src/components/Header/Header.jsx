@@ -13,7 +13,7 @@ import {ReactComponent as ShoppingBag} from 'img/Header/ShoppingBag.svg'
 
 import styles from 'components/Header/styles.module.css';
 
-function Header({setInputShow}) {
+function Header({setInputShow,isSignIn}) {
   const [sideBar, setSideBar] = useState(false);
   const showSideBar = () => setSideBar(!sideBar);
 

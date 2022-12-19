@@ -10,7 +10,7 @@ import Cross from 'img/Registration/Vector.svg';
 import styles from 'components/SignUp/styles.module.css';
 
 
-function SignUp({registration , setRegistration, inputShow, setInputShow, setDataBase, dataBase}){
+function SignUp({registration , setRegistration, inputShow, setInputShow, setDataBase, dataBase,isSignIn, setIsSignIn}){
 
     let passw=  /^[A-Za-z]\w{7,14}$/;
 
@@ -53,7 +53,7 @@ function SignUp({registration , setRegistration, inputShow, setInputShow, setDat
             console.log('Все ок');
             setDataBase((prev)=>{
                 return(
-                   prev.push({Email:register.Email,Password:register.Password})
+                   prev.push({email:register.Email,password:register.Password})
             )});
         };
         setRegistration(!registration);
@@ -62,6 +62,7 @@ function SignUp({registration , setRegistration, inputShow, setInputShow, setDat
             Password: "",
             PasswordRepeat: "",
         });
+        setIsSignIn(true);
     }
     function Input(name,placeholder, repeat=''){
         return (<div className={styles.nameInputWrapper}><p className={styles.nameInput}>{repeat}  {name}*: </p><input 
