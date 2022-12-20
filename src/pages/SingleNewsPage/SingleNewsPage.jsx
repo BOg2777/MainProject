@@ -8,8 +8,8 @@ import { useLocation, Link } from "react-router-dom";
 
 import styles from "pages/SingleNewsPage/style.module.css";
 
-import { newsList } from "pages/news/NewsData";
-import { NewsItem } from "components";
+import { newsList } from "../news/NewsData";
+import { NewsItem } from "../news/ui";
 
 function SingleNewsPage() {
   const location = useLocation();

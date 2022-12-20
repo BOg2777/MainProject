@@ -2,7 +2,7 @@ import React from "react";
 import { useLocation } from "react-router-dom";
 import {useEffect } from "react";
 
-import { Contacts } from "components";
+import { Contacts } from "./ui";
 
 function ContactsPage() {
   const { pathname } = useLocation();

@@ -1,1 +1,1 @@
-export {default as News} from 'pages/news/News'
+export {default as News} from './News'

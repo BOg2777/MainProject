@@ -1,7 +1,7 @@
 import { observer } from 'mobx-react-lite'
 import { useState } from 'react';
 
-import { AboveHeader,Header,Footer, SideBar, SignUp, SignIn} from 'components'
+import { AboveHeader,Header,Footer, SideBar, SignUp, SignIn} from './ui'
 
 import styles from './styles.module.css'
 

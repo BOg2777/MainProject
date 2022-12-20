@@ -1,1 +1,1 @@
-export {default as SingleNewsPage} from 'pages/SingleNewsPage/SingleNewsPage'
+export {default as SingleNewsPage} from './SingleNewsPage'

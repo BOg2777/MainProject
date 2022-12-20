@@ -1,1 +1,0 @@
-export {default as NewsItem} from 'components/NewsItem/NewsItem'

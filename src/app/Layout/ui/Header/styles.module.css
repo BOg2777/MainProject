@@ -1,0 +1,217 @@
+@font-face {
+  font-family: "Hauora";
+  src: url("../../../../fonts/Hauora/Hauora-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+.header {
+  z-index: 1;
+  height: 76px;
+  background: #252525;
+  border-radius: 16px;
+  margin: 16px 20px 0px 20px;
+  text-align: center;
+}
+
+.appNavigation {
+  display: flex;
+  align-items: center;
+  padding-top: 24px;
+}
+
+.logo {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 8px;
+  justify-content: flex-start;
+  align-content: center;
+  color: #f2f2f2;
+  width: 263px;
+  height: 28px;
+  text-decoration: none;
+  list-style: none;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.navList:nth-child(1) {
+  margin-right: 8px;
+  margin-left: 24px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 4px 12px;
+  gap: 4px;
+  width: 99px;
+}
+
+.navList {
+  text-decoration: none;
+  color: #f2f2f2;
+  border: 1.5px solid #f2f2f2;
+  height: 28px;
+  border-radius: 100px;
+  cursor: pointer;
+}
+
+.navList:hover,
+.navList:focus,
+.navList:active {
+  background: #dfff4f;
+  color: #252525;
+  border: 1.5px solid #dfff4f;
+}
+
+.navList:hover * {
+  stroke: #252525;
+  fill: #252525;
+}
+.navList:focus * {
+  stroke: #252525;
+  fill: #252525;
+}
+.navList:active * {
+  stroke: #252525;
+  fill: #252525;
+}
+
+.navList:nth-child(2) {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 4px 12px;
+  gap: 10px;
+  width: 66px;
+}
+
+.navList:nth-child(3) {
+  box-sizing: border-box;
+  margin-left: 8px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 4px 12px;
+  gap: 10px;
+  width: 82px;
+}
+
+.userBar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 12px;
+  justify-content: flex-end;
+  text-decoration: none;
+  list-style: none;
+}
+
+.favourites:hover *,
+.favourites:focus *,
+.favourites:active * {
+  stroke: #252525;
+}
+
+.user:hover *,
+.user:focus *,
+.user:active * {
+  stroke: #252525;
+}
+
+.shoppingBag:hover *,
+.shoppingBag:focus *,
+.shoppingBag:active * {
+  stroke: #252525;
+}
+
+.headerSearch {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 4px 12px;
+  gap: 4px;
+  width: 187px;
+  height: 28px;
+  border: 1.5px solid #f2f2f2;
+  border-radius: 100px;
+}
+
+.search {
+  background-color: transparent;
+  border: none;
+  color: #dfff4f;
+  padding-left: 3px;
+  font-size: 16px;
+}
+
+.search::placeholder {
+  color: #f2f2f2;
+}
+
+.search:active,
+.search:focus,
+.search:active {
+  border: none;
+  appearance: none;
+  outline: none;
+}
+
+.favourites,
+.user,
+.shoppingBag {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 4px 12px;
+  gap: 4px;
+  width: 40px;
+  height: 28px;
+  border: 1.5px solid #f2f2f2;
+  border-radius: 100px;
+  text-decoration: none;
+  list-style: none;
+}
+
+.favourites:hover,
+.favourites:active,
+.favourites:focus {
+  background: #dfff4f;
+  color: #252525;
+  border: 1.5px solid #dfff4f;
+}
+
+.user:hover,
+.user:active,
+.user:focus {
+  background: #dfff4f;
+  color: #252525;
+  border: 1.5px solid #dfff4f;
+}
+
+.shoppingBag:hover,
+.shoppingBagr:active,
+.shoppingBag:focus {
+  background: #dfff4f;
+  color: #252525;
+  border: 1.5px solid #dfff4f;
+}
+
+.userBar:last-child {
+  margin-right: 24px;
+}

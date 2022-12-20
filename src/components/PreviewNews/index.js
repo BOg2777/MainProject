@@ -1,1 +1,0 @@
-export {default as PreviewNews} from 'components/PreviewNews/PreviewNews'

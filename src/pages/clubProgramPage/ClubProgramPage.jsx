@@ -1,7 +1,7 @@
 import { React, useEffect } from "react";
 import { useLocation } from 'react-router-dom';
 
-import {  ClubProgram,} from "components";
+import {  ClubProgram,} from "./ui";
 
 
 function ClubProgramPage() {

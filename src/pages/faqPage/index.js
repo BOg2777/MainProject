@@ -1,1 +1,1 @@
-export {default as FaqPage} from 'pages/faqPage/FaqPage'
+export {default as FaqPage} from './FaqPage'

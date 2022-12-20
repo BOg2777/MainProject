@@ -1,0 +1,1 @@
+export {default as SideBar} from 'app/Layout/ui/SideBar/SideBar'

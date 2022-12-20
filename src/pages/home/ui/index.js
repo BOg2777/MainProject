@@ -1,0 +1,7 @@
+export {AboutUs} from './AboutUs'
+export {Carousel} from './Carousel'
+export {InfoAndOffers} from './InfoAndOffers'
+export {NavToCategories} from './NavToCategories'
+export {PreviewNewProducts} from './PreviewNewProducts'
+export {PreviewNews} from './PreviewNews'
+export {PreviewPopularProducts} from './PreviewPopularProducts'

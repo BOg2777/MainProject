@@ -1,1 +1,0 @@
-export {default as ClubProgram} from 'components/ClubProgram/ClubProgram'

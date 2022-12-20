@@ -4,8 +4,8 @@ import icon from "assets/img/News/Ellipse.svg";
 
 import styles from "pages/news/style.module.css";
 
-import { NewsItem } from "components";
-import { newsList } from 'pages/news/NewsData'
+import { NewsItem } from "./ui";
+import { newsList } from './NewsData'
 
 function News() {
 
