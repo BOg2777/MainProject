@@ -2,7 +2,7 @@ import React from "react";
 
 import styles from "./styles.module.css";
 
-import { SportCategory } from "components";
+import { SportCategory } from "../../ui";
 
 const SPORT_CATEGORY = [
   { title: "Бадминтон", className: "badminton" },

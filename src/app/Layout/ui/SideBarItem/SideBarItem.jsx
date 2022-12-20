@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 import { useState } from "react";
 
-import styles from 'components/SideBarItem/style.module.css'
+import styles from './style.module.css'
 
 function SidebarItem({item, index,}){
     const [open, setOpen] = useState(false)
