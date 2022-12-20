@@ -6,7 +6,7 @@ import icon from 'assets/img/NavBar/backNavBar.svg';
 import styles from './style.module.css'
 
 import { SideBarData } from "./SideBarData";
-import SidebarItem from "../../ui"
+import SidebarItem from "../../ui/SideBarItem/SideBarItem"
 
 
 

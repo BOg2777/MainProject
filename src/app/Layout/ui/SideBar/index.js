@@ -1,1 +1,1 @@
-export {default as SideBar} from 'app/Layout/ui/SideBar/SideBar'
+export {default as SideBar} from './SideBar'
