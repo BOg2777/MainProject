@@ -1,8 +1,8 @@
 import React from "react";
 
-import icon from "img/News/Ellipse.svg";
-import leftArrow from "img/News/left.svg";
-import rightArrow from "img/News/right.svg";
+import icon from "assets/img/News/Ellipse.svg";
+import leftArrow from "assets/img/News/left.svg";
+import rightArrow from "assets/img/News/right.svg";
 
 import { useLocation, Link } from "react-router-dom";
 

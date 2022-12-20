@@ -3,8 +3,8 @@ import { useNavigate } from 'react-router-dom'
 
 import styles from "components/NotFound/styles.module.css";
 
-import logo from 'img/Header/LogoBl.svg'
-import shuttlecock from 'img/Header/Polygon.jpg'
+import logo from 'assets/img/Header/LogoBl.svg'
+import shuttlecock from 'assets/img/Header/Polygon.jpg'
 
 
 

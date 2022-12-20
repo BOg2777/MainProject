@@ -4,12 +4,12 @@ import { Link } from 'react-router-dom'
 
 import SideBar from "components/SideBar/SideBar"
 
-import logo from 'img/Header/Logo.svg'
-import search from 'img/Header/Search.svg'
-import {ReactComponent as Menu} from 'img/Header/Filter.svg'
-import {ReactComponent as Favourite} from 'img/Header/Favourite.svg'
-import {ReactComponent as User} from 'img/Header/User.svg'
-import {ReactComponent as ShoppingBag} from 'img/Header/ShoppingBag.svg'
+import logo from 'assets/img/Header/Logo.svg'
+import search from 'assets/img/Header/Search.svg'
+import {ReactComponent as Menu} from 'assets/img/Header/Filter.svg'
+import {ReactComponent as Favourite} from 'assets/img/Header/Favourite.svg'
+import {ReactComponent as User} from 'assets/img/Header/User.svg'
+import {ReactComponent as ShoppingBag} from 'assets/img/Header/ShoppingBag.svg'
 
 import styles from 'components/Header/styles.module.css';
 

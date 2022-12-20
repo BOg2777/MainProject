@@ -1,7 +1,7 @@
 import { React, useEffect } from "react";
 import { useLocation } from 'react-router-dom';
 
-import { Header,Footer, ClubProgram,AboveHeader} from "components";
+import {  ClubProgram,} from "components";
 
 
 function ClubProgramPage() {
@@ -11,10 +11,7 @@ function ClubProgramPage() {
 
     return (
         <div>
-            <AboveHeader/>
-            <Header/>
             <ClubProgram/>
-            <Footer />
         </div>
 
     )

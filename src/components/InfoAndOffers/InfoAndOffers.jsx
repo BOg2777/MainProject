@@ -3,8 +3,8 @@ import { useNavigate } from 'react-router-dom'
 
 import styles from 'components/InfoAndOffers/styles.module.css';
 
-import userIcon from "img/Header/UserIcon.svg";
-import thunder from "img/Header/Thunder.svg";
+import userIcon from "assets/img/Header/UserIcon.svg";
+import thunder from "assets/img/Header/Thunder.svg";
 
 
 function InfoAndOffers({setRegistration}) {

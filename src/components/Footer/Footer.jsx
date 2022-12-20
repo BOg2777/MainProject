@@ -2,21 +2,21 @@ import React from "react";
 
 import { Link } from 'react-router-dom'
 
-import logo from "img/Header/Logo.svg";
-import facebook from "img/Footer/facebook.svg";
-import twitter from "img/Footer/twitter.svg";
-import instagram from "img/Footer/inst.svg";
-import vk from "img/Footer/vk.svg";
-import applePay from "img/Footer/apple.svg";
-import googlePay from "img/Footer/google.svg";
-import visa from "img/Footer/visa.svg";
-import mastercard from "img/Footer/Master.svg";
-import mir from "img/Footer/Mir.svg";
-import belcard from "img/Footer/Belcart.svg";
+import logo from "assets/img/Header/Logo.svg";
+import facebook from "assets/img/Footer/facebook.svg";
+import twitter from "assets/img/Footer/twitter.svg";
+import instagram from "assets/img/Footer/inst.svg";
+import vk from "assets/img/Footer/vk.svg";
+import applePay from "assets/img/Footer/apple.svg";
+import googlePay from "assets/img/Footer/google.svg";
+import visa from "assets/img/Footer/visa.svg";
+import mastercard from "assets/img/Footer/Master.svg";
+import mir from "assets/img/Footer/Mir.svg";
+import belcard from "assets/img/Footer/Belcart.svg";
 
 import styles from "components/Footer/styles.module.css";
 
-import {ReactComponent as Arrow} from "img/Footer/arrow.svg";
+import {ReactComponent as Arrow} from "assets/img/Footer/arrow.svg";
 
 function Footer() {
   return (

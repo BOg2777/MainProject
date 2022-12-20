@@ -2,7 +2,7 @@ import React from "react";
 
 import styles from "components/AboutUs/styles.module.css";
 
-import logoChanged from "img/Header/LogoGr.svg";
+import logoChanged from "assets/img/Header/LogoGr.svg";
 
 function AboutUs() {
 

@@ -2,9 +2,9 @@ import React from "react";
 
 import styles from "components/PreviewNews/styles.module.css";
 
-import news1 from "img/PreviewNews/4d20.jpeg";
-import news2 from "img/PreviewNews/dfgdfg.jpeg";
-import news3 from "img/PreviewNews/c9f7.jpeg";
+import news1 from "assets/img/PreviewNews/4d20.jpeg";
+import news2 from "assets/img/PreviewNews/dfgdfg.jpeg";
+import news3 from "assets/img/PreviewNews/c9f7.jpeg";
 
 function PreviewNews() {
   return (

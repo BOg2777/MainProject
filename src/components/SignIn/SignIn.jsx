@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 
-import logoApple from 'img/Registration/Apple.svg';
-import logoFacebook from 'img/Registration/Facebook.svg';
-import logoGoogle from 'img/Registration/Google.svg';
-import logoVk from 'img/Registration/Vk-fill.svg';
-import logoYandex from 'img/Registration/Yandex.svg';
-import Cross from 'img/Registration/Vector.svg';
+import logoApple from 'assets/img/Registration/Apple.svg';
+import logoFacebook from 'assets/img/Registration/Facebook.svg';
+import logoGoogle from 'assets/img/Registration/Google.svg';
+import logoVk from 'assets/img/Registration/Vk-fill.svg';
+import logoYandex from 'assets/img/Registration/Yandex.svg';
+import Cross from 'assets/img/Registration/Vector.svg';
 
 import styles from 'components/SignIn/styles.module.css';
 

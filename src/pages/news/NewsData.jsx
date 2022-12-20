@@ -1,9 +1,8 @@
-import React from "react";
 
-import imgNews1 from 'img/News/image1.jpg'
-import imgNews2 from 'img/News/image2.jpg'
-import imgNews3 from 'img/News/image3.png'
-import imgNews4 from 'img/News/image4.jpg'
+import imgNews1 from 'assets/img/News/image1.jpg'
+import imgNews2 from 'assets/img/News/image2.jpg'
+import imgNews3 from 'assets/img/News/image3.png'
+import imgNews4 from 'assets/img/News/image4.jpg'
 
 export const newsList = [
     {

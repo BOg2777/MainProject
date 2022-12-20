@@ -2,18 +2,18 @@ import React, { useState } from "react";
 
 import styles from "components/PreviewNewProducts/styles.module.css";
 
-import Tshirt1 from "img/PreviewNewProducts/tsh9.jpeg";
-import Tshirt2 from "img/PreviewNewProducts/tsh2.jpeg";
-import Tshirt3 from "img/PreviewNewProducts/tsh3.jpeg";
-import Tshirt4 from "img/PreviewNewProducts/tsh4.jpeg";
-import Tshirt5 from "img/PreviewNewProducts/tsh5.jpeg";
-import Tshirt6 from "img/PreviewNewProducts/tsh6.jpeg";
-import Tshirt7 from "img/PreviewNewProducts/tsh8.jpeg";
-import Tshirt8 from "img/PreviewNewProducts/7u0k.jpeg";
-import accessory1 from "img/PreviewNewProducts/nmfcul715.jpeg";
-import accessory2 from "img/PreviewNewProducts/rpankd9.jpeg";
-import accessory3 from "img/PreviewNewProducts/shntuplwh5e6.jpeg";
-import accessory4 from "img/PreviewNewProducts/pbg8.jpeg";
+import Tshirt1 from "assets/img/PreviewNewProducts/tsh9.jpeg";
+import Tshirt2 from "assets/img/PreviewNewProducts/tsh2.jpeg";
+import Tshirt3 from "assets/img/PreviewNewProducts/tsh3.jpeg";
+import Tshirt4 from "assets/img/PreviewNewProducts/tsh4.jpeg";
+import Tshirt5 from "assets/img/PreviewNewProducts/tsh5.jpeg";
+import Tshirt6 from "assets/img/PreviewNewProducts/tsh6.jpeg";
+import Tshirt7 from "assets/img/PreviewNewProducts/tsh8.jpeg";
+import Tshirt8 from "assets/img/PreviewNewProducts/7u0k.jpeg";
+import accessory1 from "assets/img/PreviewNewProducts/nmfcul715.jpeg";
+import accessory2 from "assets/img/PreviewNewProducts/rpankd9.jpeg";
+import accessory3 from "assets/img/PreviewNewProducts/shntuplwh5e6.jpeg";
+import accessory4 from "assets/img/PreviewNewProducts/pbg8.jpeg";
 
 const NEW_PRODUCTS = [
   { img: Tshirt1, model: "Мужская футболка LI-NING AAYP066-1", price: "2 400 ₽" , category: 'men' },

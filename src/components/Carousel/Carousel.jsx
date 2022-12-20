@@ -2,7 +2,7 @@ import React from "react"
 
 import styles from "components/Carousel/styles.module.css";
 
-import { ReactComponent as Arrow } from "img/Carousel/Arrow-up-right.svg"
+import { ReactComponent as Arrow } from "assets/img/Carousel/Arrow-up-right.svg"
 
 const SUBCATEGORIES = [
   { category: "одежда для мужчин", quantity: "45 товаров", style: "man" },

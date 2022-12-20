@@ -1,7 +1,7 @@
 import React from "react";
 
-import icon2 from 'img/NavBar/Vector.svg'
-import icon3 from 'img/NavBar/VectorDown.svg'
+import icon2 from 'assets/img/NavBar/Vector.svg'
+import icon3 from 'assets/img/NavBar/VectorDown.svg'
 
 import styles from './style.module.css'
 

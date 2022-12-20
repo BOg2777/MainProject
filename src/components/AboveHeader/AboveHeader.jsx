@@ -1,7 +1,7 @@
 import React from "react";
 
-import whatsapp from "img/Header/Whatsapp.svg";
-import telegram from "img/Header/Telegram.svg";
+import whatsapp from "assets/img/Header/Whatsapp.svg";
+import telegram from "assets/img/Header/Telegram.svg";
 
 import styles from "components/AboveHeader/styles.module.css";
 

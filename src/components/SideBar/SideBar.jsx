@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
 
-import icon from 'img/NavBar/backNavBar.svg';
+import icon from 'assets/img/NavBar/backNavBar.svg';
 
 import styles from 'components/SideBar/style.module.css'
 

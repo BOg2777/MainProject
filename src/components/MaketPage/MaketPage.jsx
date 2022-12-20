@@ -2,7 +2,7 @@ import React from "react";
 
 import { ProductItem, Paginat } from "components";
 
-import logo from 'img/Mens-T-shirt/Ellipse 36.png'
+import logo from 'assets/img/Mens-T-shirt/Ellipse 36.png'
 
 import styles from './styles.module.css';
 

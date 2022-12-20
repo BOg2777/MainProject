@@ -2,18 +2,18 @@ import React, { useState} from "react";
 
 import styles from "components/PreviewPopularProducts/styles.module.css";
 
-import man1 from "img/PreviewPopularProducts/4xrod6i.jpeg";
-import man2 from "img/PreviewPopularProducts/c4479e.jpeg";
-import man3 from "img/PreviewPopularProducts/13qte6.jpeg";
-import man4 from "img/PreviewPopularProducts/9305.jpeg";
-import woman1 from "img/PreviewPopularProducts/5w17s.jpeg";
-import woman2 from "img/PreviewPopularProducts/a16sj.jpeg";
-import woman3 from "img/PreviewPopularProducts/bcf29.jpeg";
-import woman4 from "img/PreviewPopularProducts/mk5e.jpeg";
-import accessory5 from "img/PreviewPopularProducts/0e8f1e.jpeg";
-import accessory6 from "img/PreviewPopularProducts/7mtqxhr.jpeg";
-import accessory7 from "img/PreviewPopularProducts/lb1n8f.jpeg";
-import accessory8 from "img/PreviewPopularProducts/qvc1jrf0y.jpeg";
+import man1 from "assets/img/PreviewPopularProducts/4xrod6i.jpeg";
+import man2 from "assets/img/PreviewPopularProducts/c4479e.jpeg";
+import man3 from "assets/img/PreviewPopularProducts/13qte6.jpeg";
+import man4 from "assets/img/PreviewPopularProducts/9305.jpeg";
+import woman1 from "assets/img/PreviewPopularProducts/5w17s.jpeg";
+import woman2 from "assets/img/PreviewPopularProducts/a16sj.jpeg";
+import woman3 from "assets/img/PreviewPopularProducts/bcf29.jpeg";
+import woman4 from "assets/img/PreviewPopularProducts/mk5e.jpeg";
+import accessory5 from "assets/img/PreviewPopularProducts/0e8f1e.jpeg";
+import accessory6 from "assets/img/PreviewPopularProducts/7mtqxhr.jpeg";
+import accessory7 from "assets/img/PreviewPopularProducts/lb1n8f.jpeg";
+import accessory8 from "assets/img/PreviewPopularProducts/qvc1jrf0y.jpeg";
 
 const POPULAR_PRODUCTS = [
   { img: woman1, model: "Женское поло KAWASAKI ST-Q2301 WHITE ", price: "1 900 ₽" , category: 'women'},

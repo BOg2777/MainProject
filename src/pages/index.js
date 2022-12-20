@@ -5,3 +5,4 @@ export {NotFoundPage} from 'pages/notFoundPage'
 export {ClubProgramPage} from 'pages/clubProgramPage'
 export {FaqPage} from "pages/faqPage"
 export {ContactsPage} from "pages/contactsPage"
+export {SingleNewsPage} from 'pages/SingleNewsPage'

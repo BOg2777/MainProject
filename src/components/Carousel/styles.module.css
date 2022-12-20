@@ -3,7 +3,7 @@
   margin: 100px 20px 100px 20px;
   background: #252525;
   border-radius: 24px;
-  background-image: url(../../img/Carousel/LinkedGroup.svg);
+  background-image: url(../../assets/img/Carousel/LinkedGroup.svg);
   background-repeat: no-repeat;
 }
 
@@ -52,7 +52,7 @@
   text-align: center;
   margin-top: 82px;
   color: #dfff4f;
-  background-image: url(../../img/Carousel/Arrow-right.svg);
+  background-image: url(../../assets/img/Carousel/Arrow-right.svg);
   background-repeat: no-repeat;
   background-position-x: 92%;
   background-position-y: 55%;
@@ -120,7 +120,7 @@
 
 .man {
   flex: 0 0 27.3%;
-  background: #3f413e url(../../img/Carousel/image1.svg);
+  background: #3f413e url(../../assets/img/Carousel/image1.svg);
   border-radius: 16px;
   height: 414px;
 }
@@ -128,12 +128,12 @@
 .man:hover {
   outline: 1px solid #dfff4f;
   outline-offset: -1px;
-  background: #303030 url(../../img/Carousel/image1.svg);
+  background: #303030 url(../../assets/img/Carousel/image1.svg);
 }
 
 .woman {
   flex: 0 0 27.3%;
-  background: #3f413e url(../../img/Carousel/image2.svg);
+  background: #3f413e url(../../assets/img/Carousel/image2.svg);
   border-radius: 16px;
   height: 414px;
 }
@@ -141,12 +141,12 @@
 .woman:hover {
   outline: 1px solid #dfff4f;
   outline-offset: -1px;
-  background: #303030 url(../../img/Carousel/image2.svg);
+  background: #303030 url(../../assets/img/Carousel/image2.svg);
 }
 
 .rackets {
   flex: 0 0 27.3%;
-  background: #3f413e url(../../img/Carousel/image3.svg);
+  background: #3f413e url(../../assets/img/Carousel/image3.svg);
   border-radius: 16px;
   height: 414px;
 }
@@ -154,12 +154,12 @@
 .rackets:hover {
   outline: 1px solid #dfff4f;
   outline-offset: -1px;
-  background: #303030 url(../../img/Carousel/image3.svg);
+  background: #303030 url(../../assets/img/Carousel/image3.svg);
 }
 
 .shuttlecock {
   flex: 0 0 27.3%;
-  background: #3f413e url(../../img/Carousel/image4.svg);
+  background: #3f413e url(../../assets/img/Carousel/image4.svg);
   border-radius: 16px;
   height: 414px;
 }
@@ -167,12 +167,12 @@
 .shuttlecock:hover {
   outline: 1px solid #dfff4f;
   outline-offset: -1px;
-  background: #303030 url(../../img/Carousel/image4.svg);
+  background: #303030 url(../../assets/img/Carousel/image4.svg);
 }
 
 .trainers {
   flex: 0 0 27.3%;
-  background: #3f413e url(../../img/Carousel/image5.svg);
+  background: #3f413e url(../../assets/img/Carousel/image5.svg);
   border-radius: 16px;
   height: 414px;
 }
@@ -180,12 +180,12 @@
 .trainers:hover {
   outline: 1px solid #dfff4f;
   outline-offset: -1px;
-  background: #303030 url(../../img/Carousel/image5.svg);
+  background: #303030 url(../../assets/img/Carousel/image5.svg);
 }
 
 .stretchingRackets {
   flex: 0 0 27.3%;
-  background: #3f413e url(../../img/Carousel/image6.svg);
+  background: #3f413e url(../../assets/img/Carousel/image6.svg);
   border-radius: 16px;
   height: 414px;
 }
@@ -193,12 +193,12 @@
 .stretchingRackets:hover {
   outline: 1px solid #dfff4f;
   outline-offset: -1px;
-  background: #303030 url(../../img/Carousel/image6.svg);
+  background: #303030 url(../../assets/img/Carousel/image6.svg);
 }
 
 .stringsForStretching {
   flex: 0 0 27.3%;
-  background: #3f413e url(../../img/Carousel/image7.svg);
+  background: #3f413e url(../../assets/img/Carousel/image7.svg);
   border-radius: 16px;
   height: 414px;
 }
@@ -206,12 +206,12 @@
 .stringsForStretching:hover {
   outline: 1px solid #dfff4f;
   outline-offset: -1px;
-  background: #303030 url(../../img/Carousel/image7.svg);
+  background: #303030 url(../../assets/img/Carousel/image7.svg);
 }
 
 .strings {
   flex: 0 0 27.3%;
-  background: #3f413e url(../../img/Carousel/image8.svg);
+  background: #3f413e url(../../assets/img/Carousel/image8.svg);
   border-radius: 16px;
   height: 414px;
 }
@@ -219,12 +219,12 @@
 .strings:hover {
   outline: 1px solid #dfff4f;
   outline-offset: -1px;
-  background: #303030 url(../../img/Carousel/image8.svg);
+  background: #303030 url(../../assets/img/Carousel/image8.svg);
 }
 
 .netting {
   flex: 0 0 27.3%;
-  background: #3f413e url(../../img/Carousel/image9.svg);
+  background: #3f413e url(../../assets/img/Carousel/image9.svg);
   border-radius: 16px;
   height: 414px;
 }
@@ -232,11 +232,11 @@
 .netting:hover {
   outline: 1px solid #dfff4f;
   outline-offset: -1px;
-  background: #303030 url(../../img/Carousel/image9.svg);
+  background: #303030 url(../../assets/img/Carousel/image9.svg);
 }
 .tennis {
   flex: 0 0 27.3%;
-  background: #3f413e url(../../img/Carousel/image10.svg);
+  background: #3f413e url(../../assets/img/Carousel/image10.svg);
   border-radius: 16px;
   height: 414px;
 }
@@ -244,12 +244,12 @@
 .tennis:hover {
   outline: 1px solid #dfff4f;
   outline-offset: -1px;
-  background: #303030 url(../../img/Carousel/image10.svg);
+  background: #303030 url(../../assets/img/Carousel/image10.svg);
 }
 
 .badminton {
   flex: 0 0 27.3%;
-  background: #3f413e url(../../img/Carousel/image11.svg);
+  background: #3f413e url(../../assets/img/Carousel/image11.svg);
   border-radius: 16px;
   height: 414px;
 }
@@ -257,12 +257,12 @@
 .badminton:hover {
   outline: 1px solid #dfff4f;
   outline-offset: -1px;
-  background: #303030 url(../../img/Carousel/image11.svg);
+  background: #303030 url(../../assets/img/Carousel/image11.svg);
 }
 
 .windings {
   flex: 0 0 27.3%;
-  background: #3f413e url(../../img/Carousel/image12.svg);
+  background: #3f413e url(../../assets/img/Carousel/image12.svg);
   border-radius: 16px;
   height: 414px;
 }
@@ -270,12 +270,12 @@
 .windings:hover {
   outline: 1px solid #dfff4f;
   outline-offset: -1px;
-  background: #303030 url(../../img/Carousel/image12.svg);
+  background: #303030 url(../../assets/img/Carousel/image12.svg);
 }
 
 .courts {
   flex: 0 0 27.3%;
-  background: #3f413e url(../../img/Carousel/image13.svg);
+  background: #3f413e url(../../assets/img/Carousel/image13.svg);
   border-radius: 16px;
   height: 414px;
 }
@@ -283,89 +283,89 @@
 .courts:hover {
   outline: 1px solid #dfff4f;
   outline-offset: -1px;
-  background: #303030 url(../../img/Carousel/image13.svg);
+  background: #303030 url(../../assets/img/Carousel/image13.svg);
 }
 
 .bags {
   flex: 0 0 27.3%;
-  background: #3f413e url(../../img/Carousel/image14.svg);
+  background: #3f413e url(../../assets/img/Carousel/image14.svg);
   border-radius: 16px;
   height: 414px;
 }
 .bags:hover {
   outline: 1px solid #dfff4f;
   outline-offset: -1px;
-  background: #303030 url(../../img/Carousel/image14.svg);
+  background: #303030 url(../../assets/img/Carousel/image14.svg);
 }
 
 .accessories {
   flex: 0 0 27.3%;
-  background: #3f413e url(../../img/Carousel/image15.svg);
+  background: #3f413e url(../../assets/img/Carousel/image15.svg);
   border-radius: 16px;
   height: 414px;
 }
 .accessories:hover {
   outline: 1px solid #dfff4f;
   outline-offset: -1px;
-  background: #303030 url(../../img/Carousel/image15.svg);
+  background: #303030 url(../../assets/img/Carousel/image15.svg);
 }
 
 .fitness {
   flex: 0 0 27.3%;
-  background: #3f413e url(../../img/Carousel/image16.svg);
+  background: #3f413e url(../../assets/img/Carousel/image16.svg);
   border-radius: 16px;
   height: 414px;
 }
 .fitness:hover {
   outline: 1px solid #dfff4f;
   outline-offset: -1px;
-  background: #303030 url(../../img/Carousel/image16.svg);
+  background: #303030 url(../../assets/img/Carousel/image16.svg);
 }
 
 .medicine {
   flex: 0 0 27.3%;
-  background: #3f413e url(../../img/Carousel/image17.svg);
+  background: #3f413e url(../../assets/img/Carousel/image17.svg);
   border-radius: 16px;
   height: 414px;
 }
 .medicine:hover {
   outline: 1px solid #dfff4f;
   outline-offset: -1px;
-  background: #303030 url(../../img/Carousel/image17.svg);
+  background: #303030 url(../../assets/img/Carousel/image17.svg);
 }
 
 .nordicWalking {
   flex: 0 0 27.3%;
-  background: #3f413e url(../../img/Carousel/image18.svg);
+  background: #3f413e url(../../assets/img/Carousel/image18.svg);
   border-radius: 16px;
   height: 414px;
 }
 .nordicWalking:hover {
   outline: 1px solid #dfff4f;
   outline-offset: -1px;
-  background: #303030 url(../../img/Carousel/image18.svg);
+  background: #303030 url(../../assets/img/Carousel/image18.svg);
 }
 
 .swimming {
   flex: 0 0 27.3%;
-  background: #3f413e url(../../img/Carousel/image19.svg);
+  background: #3f413e url(../../assets/img/Carousel/image19.svg);
   border-radius: 16px;
   height: 414px;
 }
 .swimming:hover {
   outline: 1px solid #dfff4f;
   outline-offset: -1px;
-  background: #303030 url(../../img/Carousel/image19.svg);
+  background: #303030 url(../../assets/img/Carousel/image19.svg);
 }
 
 .giftCards {
   flex: 0 0 27.3%;
-  background: #3f413e url(../../img/Carousel/image20.svg);
+  background: #3f413e url(../../assets/img/Carousel/image20.svg);
   border-radius: 16px;
   height: 414px;
 }
 .giftCards:hover {
   outline: 1px solid #dfff4f;
   outline-offset: -1px;
-  background: #303030 url(../../img/Carousel/image20.svg);
+  background: #303030 url(../../assets/img/Carousel/image20.svg);
 }

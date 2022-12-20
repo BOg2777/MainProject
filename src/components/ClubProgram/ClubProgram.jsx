@@ -2,7 +2,7 @@ import React from "react";
 
 import styles from "components/ClubProgram/styles.module.css";
 
-import image from "img/Header/10078.jpg";
+import image from "assets/img/Header/10078.jpg";
 
 function ClubProgram() {
   return (
