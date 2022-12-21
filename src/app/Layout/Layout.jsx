@@ -1,7 +1,7 @@
 import { observer } from 'mobx-react-lite'
 import { useState } from 'react';
 
-import { AboveHeader,Header,Footer, SideBar, SignUp, SignIn} from './ui'
+import { AboveHeader,Header,Footer, SignUp, SignIn} from './ui'
 
 import styles from './styles.module.css'
 
@@ -19,7 +19,6 @@ function Layout({ children }){
       <SignIn registration={registration} setRegistration={setRegistration} inputShow={inputShow} setInputShow={setInputShow} setDataBase={setDataBase} dataBase={dataBase} isSignIn={isSignIn} setIsSignIn={setIsSignIn}/> 
       <AboveHeader />
       <Header />
-      <SideBar />
       <div className={styles.content}>{children}</div>
       <Footer />
     </div>
