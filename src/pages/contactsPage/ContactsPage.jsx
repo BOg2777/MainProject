@@ -1,11 +1,10 @@
 import React from "react";
 import { useLocation } from "react-router-dom";
-import { useState, useEffect } from "react";
+import {useEffect } from "react";
 
-import { Header, AboveHeader, Footer, Contacts } from "components";
+import { Contacts } from "./ui";
 
 function ContactsPage() {
-  const [registration, setRegistration] = useState(false);
   const { pathname } = useLocation();
 
   useEffect(() => {
@@ -14,10 +13,7 @@ function ContactsPage() {
 
   return (
     <div>
-      <AboveHeader />
-      <Header setRegistration={setRegistration} />
       <Contacts />
-      <Footer />
     </div>
   );
 }

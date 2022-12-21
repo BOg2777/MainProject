@@ -1,1 +1,0 @@
-export {default as MaketPage} from 'components/MaketPage/MaketPage'

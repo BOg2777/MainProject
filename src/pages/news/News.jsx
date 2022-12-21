@@ -1,11 +1,11 @@
 import React from "react";
 
-import icon from "img/News/Ellipse.svg";
+import icon from "assets/img/News/Ellipse.svg";
 
 import styles from "pages/news/style.module.css";
 
-import { NewsItem } from "components";
-import { newsList } from 'pages/news/NewsData'
+import { NewsItem } from "./ui";
+import { newsList } from './NewsData'
 
 function News() {
 
@@ -22,9 +22,9 @@ function News() {
       </div>
       <div className={styles.filter}>
         <input className={styles.input} type="text" placeholder="Поиск" />
-        <a className={styles.filterCategory}>
+        <p className={styles.filterCategory}>
           Сортировать по: Последние добавленные
-        </a>
+        </p>
       </div>
       <div className={styles.listItems}>
         {newsList.map((item) => {

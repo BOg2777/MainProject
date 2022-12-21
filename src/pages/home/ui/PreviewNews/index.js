@@ -1,0 +1,1 @@
+export {default as PreviewNews} from './PreviewNews'

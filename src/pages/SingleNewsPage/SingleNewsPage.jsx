@@ -1,15 +1,15 @@
 import React from "react";
 
-import icon from "img/News/Ellipse.svg";
-import leftArrow from "img/News/left.svg";
-import rightArrow from "img/News/right.svg";
+import icon from "assets/img/News/Ellipse.svg";
+import leftArrow from "assets/img/News/left.svg";
+import rightArrow from "assets/img/News/right.svg";
 
 import { useLocation, Link } from "react-router-dom";
 
 import styles from "pages/SingleNewsPage/style.module.css";
 
-import { newsList } from "pages/news/NewsData";
-import { NewsItem } from "components";
+import { newsList } from "../news/NewsData";
+import { NewsItem } from "../news/ui";
 
 function SingleNewsPage() {
   const location = useLocation();

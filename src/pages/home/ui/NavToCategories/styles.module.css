@@ -1,0 +1,44 @@
+@font-face {
+  font-family: "Actay";
+  src: url("../../../../fonts/Actay/Actay-Regular.otf") format("truetype");
+  font-style: normal;
+}
+
+.categoriesNav {
+  margin: 0 20px 0 20px;
+}
+
+.navCards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 456px 456px;
+  gap: 25px;
+  justify-content: center;
+  padding-top: 48px;
+  padding-bottom: 100px;
+  cursor: pointer;
+}
+
+.headline {
+  text-align: center;
+  margin-top: 48px;
+  margin-bottom: 12px;
+  font-family: "Actay";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #949494;
+}
+
+.description {
+  font-family: "Actay Wide";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+  transform: scaleX(1);
+  color: #252525;
+  text-shadow: 1px 1px #55525221;
+}

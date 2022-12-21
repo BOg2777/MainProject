@@ -1,1 +1,1 @@
-export {default as ContactsPage} from 'pages/contactsPage/ContactsPage'
+export {default as ContactsPage} from './ContactsPage'

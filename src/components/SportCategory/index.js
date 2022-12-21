@@ -1,1 +1,0 @@
-export {default as SportCategory} from 'components/SportCategory/SportCategory'
