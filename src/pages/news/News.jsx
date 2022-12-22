@@ -1,13 +1,16 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { observer } from "mobx-react-lite";
 
 import icon from "assets/img/News/Ellipse.svg";
 
-import styles from "pages/news/style.module.css";
-
+import styles from "./style.module.css";
 import { NewsItem } from "./ui";
-import { newsList } from './NewsData'
+import { NewsModel } from "./model";
 
 function News() {
+  useEffect(() => {
+    NewsModel.fetch();
+  }, []);
 
   return (
     <div className={styles.wrapper}>
@@ -18,7 +21,7 @@ function News() {
       </div>
       <div className={styles.title}>
         Новости
-        <div className={styles.newsAmount}>({newsList.length})</div>
+        <div className={styles.newsAmount}>({NewsModel.news.length})</div>
       </div>
       <div className={styles.filter}>
         <input className={styles.input} type="text" placeholder="Поиск" />
@@ -27,7 +30,7 @@ function News() {
         </p>
       </div>
       <div className={styles.listItems}>
-        {newsList.map((item) => {
+        {NewsModel.news.map((item) => {
           return <NewsItem item={item} />;
         })}
       </div>
@@ -35,4 +38,4 @@ function News() {
   );
 }
 
-export default News;
+export default observer(News);
