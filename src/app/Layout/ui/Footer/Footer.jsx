@@ -50,7 +50,7 @@ function Footer() {
           <h4 className={styles.columnName}>Информация</h4>
           <ul className={styles.informationList}>
           <Link to="/contacts" style={{ textDecoration: 'inherit', color:'inherit' }}>Контакты</Link>
-            <li>Оплата и доставка</li>
+          <Link to="/payment+delivery" style={{ textDecoration: 'inherit', color:'inherit' }}>Оплата и доставка</Link>
             <Link to="/returns+refunds" style={{ textDecoration: 'inherit', color:'inherit' }}>Гарантия возврата</Link>
             <Link to="/faq" style={{ textDecoration: 'inherit', color:'inherit' }}>Вопросы и ответы</Link>
           </ul>

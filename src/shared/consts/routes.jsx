@@ -6,4 +6,5 @@ export const ROUTES = {
     CLUBPROGRAM: '/clubProgram',
     FAQ: '/faq',
     CONTACTS: '/contacts',
+    PAYMENTANDDELIVERY: '/payment+delivery',
 }
