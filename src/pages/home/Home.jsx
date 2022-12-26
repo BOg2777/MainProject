@@ -1,27 +1,36 @@
-import React from 'react';
-import { useLocation } from 'react-router-dom';
-import { useEffect } from "react";
+import React from 'react'
+import { useLocation } from 'react-router-dom'
+import { useEffect } from 'react'
 import { observer } from 'mobx-react-lite'
 
-import {InfoAndOffers,NavToCategories,Carousel,PreviewNews,PreviewNewProducts,PreviewPopularProducts,AboutUs } from "./ui";
+import {
+	InfoAndOffers,
+	NavToCategories,
+	Carousel,
+	PreviewNews,
+	PreviewNewProducts,
+	PreviewPopularProducts,
+	AboutUs
+} from './ui'
 
 function Home() {
-  const { pathname } = useLocation();
+	const { pathname } = useLocation()
 
-  useEffect(() => {window.scrollTo(0, 0);}, [pathname]);
+	useEffect(() => {
+		window.scrollTo(0, 0)
+	}, [pathname])
 
-  return (
-    
-    <div>
-        <InfoAndOffers />
-        <NavToCategories />
-        <PreviewNewProducts />
-        <Carousel />
-        <PreviewNews />
-        <PreviewPopularProducts />
-        <AboutUs/>
-    </div>
-  );
-  }
-  
-  export default observer(Home);
+	return (
+		<div>
+			<InfoAndOffers />
+			<NavToCategories />
+			<PreviewNewProducts />
+			<Carousel />
+			<PreviewNews />
+			<PreviewPopularProducts />
+			<AboutUs />
+		</div>
+	)
+}
+
+export default observer(Home)
