@@ -10,6 +10,7 @@ import {
     FaqPage,
     ContactsPage,
     NotFoundPage,
+    PaymentAndDeliveryPage,
 } from 'pages'
 import { ROUTES } from 'shared/consts'
 import { useState } from 'react';
@@ -31,6 +32,7 @@ function Router() {
       <Route path={ROUTES.CLUBPROGRAM} element={< ClubProgramPage />} />
       <Route path={ROUTES.FAQ}element={<FaqPage />}  />
       <Route path={ROUTES.CONTACTS} element={<ContactsPage />} />
+      <Route path={ROUTES.PAYMENTANDDELIVERY} element={<PaymentAndDeliveryPage />} />
       <Route path='*' element={<NotFoundPage/>} />
     </Routes>
   )

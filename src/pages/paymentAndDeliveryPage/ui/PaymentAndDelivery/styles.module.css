@@ -1,0 +1,319 @@
+.paymentAndDelivery {
+  margin: 60px 20px 0 20px;
+}
+
+.headline {
+  width: 692px;
+  height: 48px;
+  font-family: "Actay Wide";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  color: #252525;
+}
+
+.optionName {
+  width: 810px;
+  height: 32px;
+  padding-top: 40px;
+  font-family: "Actay Wide";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  color: #252525;
+}
+
+.info {
+  display: block;
+  padding-bottom: 30px;
+  font-family: "Hauora";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #949494;
+  padding-top: 8px;
+  max-width: 810px;
+}
+
+.paymentMethods {
+  margin-top: 28px;
+  display: flex;
+  flex-direction: row;
+  padding: 0px;
+  gap: 18px;
+  width: 100%;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.paymentOption {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.paymentOption:nth-child(1) {
+  width: 456px;
+  height: 216px;
+}
+
+.paymentOption:nth-child(2) {
+  width: 456px;
+  height: 276px;
+}
+
+.paymentOption:nth-child(3) {
+  width: 456px;
+  height: 296px;
+}
+
+.method {
+  width: 456px;
+  height: 24px;
+  font-family: "Actay Wide";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #252525;
+}
+
+.img {
+  width: 60px;
+  height: 60px;
+}
+
+.description {
+  font-family: "Hauora";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #949494;
+}
+
+.table {
+  margin-top: 28px;
+}
+
+.name:nth-child(1) {
+  width: 338px;
+}
+
+.name {
+  height: 20px;
+  font-family: "Hauora";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: start;
+  color: #949494;
+  padding: 28px 0 12px 0;
+}
+
+th {
+  border-bottom: 1px solid #d4d4d4;
+}
+
+td {
+  border-bottom: 1px solid #d4d4d4;
+}
+
+table {
+  border-collapse: collapse;
+}
+.place {
+  width: 338px;
+  height: 20px;
+  font-family: "Hauora";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #252525;
+}
+
+.place_special {
+  width: 338px;
+  height: 20px;
+  font-family: "Hauora";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #252525;
+  position: relative;
+  padding-top: 11px;
+}
+
+.price,
+.amount {
+  width: 220px;
+  height: 20px;
+  font-family: "Hauora";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #252525;
+  padding: 20px 0 20px 0;
+}
+
+.options {
+  display: flex;
+  padding: 40px 0 100px 0;
+  align-items: flex-start;
+  gap: 16px;
+  justify-content: center;
+}
+
+.deliveryContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 24px;
+  gap: 10px;
+  width: 810px;
+  height: 388px;
+  background: #f4f4f4;
+  border-radius: 24px;
+}
+.collectContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 24px;
+  gap: 10px;
+  width: 574px;
+  height: 388px;
+  background: #f4f4f4;
+  border-radius: 24px;
+}
+.delivery {
+  font-family: "Actay Wide";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  color: #252525;
+}
+
+.collect {
+  font-family: "Actay Wide";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  color: #252525;
+}
+
+.information {
+  font-family: "Hauora";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22px;
+  color: #949494;
+  align-self: stretch;
+}
+
+.tooltip {
+  background-image: url(assets/img/PaymentAndDelivery/Vectr.svg);
+  background-size: cover;
+  width: 16px;
+  height: 16px;
+  position: relative;
+  left: 66%;
+  bottom: 35%;
+}
+
+.tooltip:hover:before {
+  background: #252525de;
+  left: -8rem;
+  bottom: 2.5rem;
+  border-radius: 4px;
+  color: #f2f2f2;
+  content: attr(data-tooltip);
+  position: absolute;
+  z-index: 98;
+  width: 269px;
+  height: 96px;
+  box-shadow: 0px 1px 2px #252525(0, 0, 0, 0.12);
+  font-family: "Hauora";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 14px;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 12px;
+  gap: 10px;
+  align-items: center;
+}
+
+.tooltip:hover:after {
+  width: 0;
+  height: 0;
+  border-left: 9px solid transparent;
+  border-right: 9px solid transparent;
+  border-top: 10px solid #252525de;
+  content: " ";
+  position: absolute;
+  bottom: 1.87rem;
+  left: 0;
+}
+
+.tooltipSecond {
+  background-image: url(assets/img/PaymentAndDelivery/Vectr.svg);
+  background-size: cover;
+  width: 16px;
+  height: 16px;
+  position: relative;
+  left: 47%;
+  bottom: 35%;
+}
+
+.tooltipSecond:hover:before {
+  background: #252525de;
+  left: -8rem;
+  bottom: 2.5rem;
+  border-radius: 4px;
+  color: #f2f2f2;
+  content: attr(data-tooltipSecond);
+  position: absolute;
+  z-index: 98;
+  width: 269px;
+  height: 96px;
+  box-shadow: 0px 1px 2px #252525(0, 0, 0, 0.12);
+  font-family: "Hauora";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 14px;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 12px;
+  gap: 10px;
+  align-items: center;
+}
+
+.tooltipSecond:hover:after {
+  width: 0;
+  height: 0;
+  border-left: 9px solid transparent;
+  border-right: 9px solid transparent;
+  border-top: 10px solid #252525de;
+  content: " ";
+  position: absolute;
+  bottom: 1.87rem;
+  left: 0;
+}
