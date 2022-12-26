@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useContext } from 'react' 
+import { observer } from 'mobx-react-lite'
 
 import { Store, ModalWindow } from 'app/App'
 import logoApple from 'assets/img/Registration/Apple.svg';
@@ -51,15 +52,15 @@ function SignIn(){
     };
 
     function OpenRegister(){
-        modal.isRegistration(!modal.isRegistration);
-        modal.isSignIn(!modal.isSignIn);
+        modal.isRegistration=!modal.isRegistration;
+        modal.isSignIn=!modal.isSignIn;
     };
     if(modal.isSignIn){
         return(
             <div className={styles.blur}>
                 <div className={styles.wrapper}>
                     <div>
-                        <div className={styles.crossWrapeer} onClick={()=>modal.isSignIn(!modal.isSignIn)}><img src={Cross} className={styles.cross}/></div>
+                        <div className={styles.crossWrapeer} onClick={()=>modal.isSignIn=!modal.isSignIn}><img src={Cross} className={styles.cross}/></div>
                     </div>
                     <h2 className={styles.title}>Войти:</h2>
                     <div className={styles.wrapperImg}>
@@ -83,4 +84,4 @@ function SignIn(){
         )
     }
 }
-export default SignIn;
+export default observer(SignIn);

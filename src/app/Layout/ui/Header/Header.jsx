@@ -1,7 +1,11 @@
 import React from "react";
 import { useState } from "react";
 import { Link } from 'react-router-dom'
+import { useContext } from 'react' 
+import { observer } from 'mobx-react-lite'
 
+import {SignIn} from '../../ui'
+import { ModalWindow } from 'app/App'
 import SideBar from "app/Layout/ui/SideBar/SideBar"
 
 import logo from 'assets/img/Header/Logo.svg'
@@ -13,7 +17,8 @@ import {ReactComponent as ShoppingBag} from 'assets/img/Header/ShoppingBag.svg'
 
 import styles from './styles.module.css';
 
-function Header({setInputShow,isSignIn}) {
+function Header() {
+  const [modal] = useContext(ModalWindow);
   const [sideBar, setSideBar] = useState(false);
   const showSideBar = () => setSideBar(!sideBar);
 
@@ -31,7 +36,7 @@ function Header({setInputShow,isSignIn}) {
             <ul className={styles.userBar}>
                 <li className={styles.headerSearch}> <img src={search} alt="search"/> <input type="text" placeholder="Поиск" className={styles.search}/></li>
                 <li className={styles.favourites}><Favourite className={styles.favourite}/> </li>
-                <li className={styles.user} onClick={()=>setInputShow(true)}><User className={styles.userImg}/></li>
+                <li className={styles.user} onClick={()=>{modal.isSignIn=true;}}><User className={styles.userImg}/></li>
                 <li className={styles.shoppingBag}><ShoppingBag className={styles.shoppingBagImg}/></li>
           </ul>
         </nav>
@@ -41,4 +46,4 @@ function Header({setInputShow,isSignIn}) {
   );
 }
 
-export default Header;
+export default observer(Header);

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useContext } from 'react' 
+import { observer } from 'mobx-react-lite'
 
 import { Store, ModalWindow } from 'app/App'
 
@@ -33,8 +34,8 @@ function SignUp(){
             PasswordRepeat: "",
     }) 
     function OpenInput(){
-        modal.isRegistration(!modal.isRegistration);
-        modal.isSignIn(!modal.isSignIn);
+        modal.isRegistration=!modal.isRegistration;
+        modal.isSignIn=!modal.isSignIn;
     }
 
     function changeInputRegister  (event) {
@@ -57,13 +58,13 @@ function SignUp(){
             console.log('Все ок');
             store.user.push({email:register.Email,password:register.Password})
         };
-        modal.isRegistration(!modal.isRegistration);
+        modal.isRegistration=!modal.isRegistration;
         setRegister({
             Email: "",
             Password: "",
             PasswordRepeat: "",
         });
-        store.isLoggedIn(true);
+        store.isLoggedIn=true;
     }
     function Input(name,placeholder, repeat=''){
         return (<div className={styles.nameInputWrapper}><p className={styles.nameInput}>{repeat}  {name}*: </p><input 
@@ -82,7 +83,7 @@ function SignUp(){
             <div className={styles.blur}>
                 <div className={styles.wrapper}>
                     <div>
-                        <div className={styles.crossWrapeer} onClick={()=>modal.isRegistration(!modal.isRegistration)}><img src={Cross} className={styles.cross}/></div>
+                        <div className={styles.crossWrapeer} onClick={()=>modal.isRegistration=!modal.isRegistration}><img src={Cross} className={styles.cross}/></div>
                     </div>
                     <h2 className={styles.title}>Регистрация:</h2>
                     <div className={styles.wrapperImg}>
@@ -107,4 +108,4 @@ function SignUp(){
         </div>
     )}
 }
-export default SignUp;
+export default observer(SignUp);

@@ -1,6 +1,7 @@
 import React from 'react';
 import { useLocation } from 'react-router-dom';
 import { useEffect } from "react";
+import { observer } from 'mobx-react-lite'
 
 import {InfoAndOffers,NavToCategories,Carousel,PreviewNews,PreviewNewProducts,PreviewPopularProducts,AboutUs } from "./ui";
 
@@ -23,4 +24,4 @@ function Home() {
   );
   }
   
-  export default Home;
+  export default observer(Home);
