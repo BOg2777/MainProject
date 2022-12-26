@@ -1,9 +1,9 @@
 export const ROUTES = {
   HOME: "/home",
   NEWS: "/news",
-  NEWSID: "/news/:id",
+  NEWS_ID: "/news/:id",
   TSHIRTS: "/catalog/badminton/mens_clothing/T-shirts",
-  CLUBPROGRAM: "/clubProgram",
+  CLUB_PROGRAM: "/clubProgram",
   FAQ: "/faq",
   CONTACTS: "/contacts",
 };

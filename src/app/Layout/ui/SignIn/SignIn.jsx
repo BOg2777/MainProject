@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
+import { useContext } from 'react' 
 
+import { Store, ModalWindow } from 'app/App'
 import logoApple from 'assets/img/Registration/Apple.svg';
 import logoFacebook from 'assets/img/Registration/Facebook.svg';
 import logoGoogle from 'assets/img/Registration/Google.svg';
@@ -9,7 +11,9 @@ import Cross from 'assets/img/Registration/Vector.svg';
 
 import styles from './styles.module.css';
 
-function SignIn({registration , setRegistration, inputShow, setInputShow,dataBase,isSignIn,setIsSignIn}){
+function SignIn(){
+    const [store] = useContext(Store);
+    const [modal] = useContext(ModalWindow);
     const [register, setRegister] = useState(() => {
         return {
             Email: "",
@@ -27,14 +31,14 @@ function SignIn({registration , setRegistration, inputShow, setInputShow,dataBas
         })
     }
     function submitChackin(){
-        dataBase.forEach((element) => {
+        store.user.forEach((element) => {
             if(element.email == register.Email && element.password == register.Password){
                 alert('True');
             }else{alert('false')}
         });
     }
     function Entry(name,placeholder){
-        console.log(register,dataBase)
+        console.log(register,store.user)
         return (<div className={styles.nameInputWrapper}><p className={styles.nameInput}>{name}*: </p><input 
         type={String(name)}
         placeholder={placeholder}
@@ -47,15 +51,15 @@ function SignIn({registration , setRegistration, inputShow, setInputShow,dataBas
     };
 
     function OpenRegister(){
-        setRegistration(!registration);
-        setInputShow(!inputShow);
+        modal.isRegistration(!modal.isRegistration);
+        modal.isSignIn(!modal.isSignIn);
     };
-    if(inputShow){
+    if(modal.isSignIn){
         return(
             <div className={styles.blur}>
                 <div className={styles.wrapper}>
                     <div>
-                        <div className={styles.crossWrapeer} onClick={()=>setInputShow(!inputShow)}><img src={Cross} className={styles.cross}/></div>
+                        <div className={styles.crossWrapeer} onClick={()=>modal.isSignIn(!modal.isSignIn)}><img src={Cross} className={styles.cross}/></div>
                     </div>
                     <h2 className={styles.title}>Войти:</h2>
                     <div className={styles.wrapperImg}>

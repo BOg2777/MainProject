@@ -1,4 +1,7 @@
 import React, { useState } from 'react';
+import { useContext } from 'react' 
+
+import { Store, ModalWindow } from 'app/App'
 
 import logoApple from 'assets/img/Registration/Apple.svg';
 import logoFacebook from 'assets/img/Registration/Facebook.svg';
@@ -10,8 +13,9 @@ import Cross from 'assets/img/Registration/Vector.svg';
 import styles from './styles.module.css';
 
 
-function SignUp({registration , setRegistration, inputShow, setInputShow, setDataBase, dataBase,isSignIn, setIsSignIn}){
-
+function SignUp(){
+    const [store] = useContext(Store);
+    const [modal] = useContext(ModalWindow);
     let passw=  /^[A-Za-z]\w{7,14}$/;
 
     const EMAIL_REGEXP = /^(([^<>()[\].,;:\s@"]+(\.[^<>()[\].,;:\s@"]+)*)|(".+"))@(([^<>()[\].,;:\s@"]+\.)+[^<>()[\].,;:\s@"]{2,})$/iu;
@@ -29,8 +33,8 @@ function SignUp({registration , setRegistration, inputShow, setInputShow, setDat
             PasswordRepeat: "",
     }) 
     function OpenInput(){
-        setRegistration(!registration);
-        setInputShow(!inputShow);
+        modal.isRegistration(!modal.isRegistration);
+        modal.isSignIn(!modal.isSignIn);
     }
 
     function changeInputRegister  (event) {
@@ -51,18 +55,15 @@ function SignUp({registration , setRegistration, inputShow, setInputShow, setDat
             alert("Repeated password incorrectly")
         } else {
             console.log('Все ок');
-            setDataBase((prev)=>{
-                return(
-                   prev.push({email:register.Email,password:register.Password})
-            )});
+            store.user.push({email:register.Email,password:register.Password})
         };
-        setRegistration(!registration);
+        modal.isRegistration(!modal.isRegistration);
         setRegister({
             Email: "",
             Password: "",
             PasswordRepeat: "",
         });
-        setIsSignIn(true);
+        store.isLoggedIn(true);
     }
     function Input(name,placeholder, repeat=''){
         return (<div className={styles.nameInputWrapper}><p className={styles.nameInput}>{repeat}  {name}*: </p><input 
@@ -75,13 +76,13 @@ function SignUp({registration , setRegistration, inputShow, setInputShow, setDat
         className = {styles.Input}/></div>
         )
     };
-    if(registration){
+    if(modal.isRegistration){
     return(
         <div>
             <div className={styles.blur}>
                 <div className={styles.wrapper}>
                     <div>
-                        <div className={styles.crossWrapeer} onClick={()=>setRegistration(!registration)}><img src={Cross} className={styles.cross}/></div>
+                        <div className={styles.crossWrapeer} onClick={()=>modal.isRegistration(!modal.isRegistration)}><img src={Cross} className={styles.cross}/></div>
                     </div>
                     <h2 className={styles.title}>Регистрация:</h2>
                     <div className={styles.wrapperImg}>

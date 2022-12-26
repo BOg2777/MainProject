@@ -1,14 +1,16 @@
 import React from "react";
 import { useNavigate } from 'react-router-dom'
+import { useContext } from 'react' 
 
+import { ModalWindow } from 'app/App'
 import styles from './styles.module.css';
 
 import userIcon from "assets/img/Header/UserIcon.svg";
 import thunder from "assets/img/Header/Thunder.svg";
 
 
-function InfoAndOffers({setRegistration}) {
-
+function InfoAndOffers() {
+  const [modal] = useContext(ModalWindow);
   const navigate = useNavigate();
 
   const navigateToClubProgram = () => {
@@ -42,7 +44,7 @@ function InfoAndOffers({setRegistration}) {
           Зарегистрируйтесь в нашем интернет-магазине и пользуйтесь всеми
           преимуществами, акциями и специальными предложениями для Вас!
         </p>
-        <button className={styles.buttonBenefits} onClick={()=>setRegistration(true)}>Зарегистрироваться</button>
+        <button className={styles.buttonBenefits} onClick={()=>modal.isRegistration((true))}>Зарегистрироваться</button>
       </div>
       </div>
 

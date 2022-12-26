@@ -4,7 +4,7 @@ import { useEffect } from "react";
 
 import {InfoAndOffers,NavToCategories,Carousel,PreviewNews,PreviewNewProducts,PreviewPopularProducts,AboutUs } from "./ui";
 
-function Home({setRegistration}) {
+function Home() {
   const { pathname } = useLocation();
 
   useEffect(() => {window.scrollTo(0, 0);}, [pathname]);
@@ -12,7 +12,7 @@ function Home({setRegistration}) {
   return (
     
     <div>
-        <InfoAndOffers setRegistration={setRegistration} />
+        <InfoAndOffers />
         <NavToCategories />
         <PreviewNewProducts />
         <Carousel />
