@@ -14,8 +14,8 @@ import Cross from 'assets/img/Registration/Vector.svg'
 import styles from './styles.module.css'
 
 function SignUp() {
-	const [store] = useContext(Store)
-	const [modal] = useContext(Modal)
+	const [store, setStore] = useContext(Store)
+	const [modal, setModal] = useContext(Modal)
 	let passw = /^[A-Za-z]\w{7,14}$/
 
 	const EMAIL_REGEXP =
@@ -34,8 +34,8 @@ function SignUp() {
 		PasswordRepeat: ''
 	})
 	function OpenInput() {
-		modal.isRegistration = !modal.isRegistration
-		modal.isSignIn = !modal.isSignIn
+		setModal((pre) => ({ ...pre, isRegistration: !modal.isRegistration }))
+		setModal((pre) => ({ ...pre, isSignIn: !modal.isSignIn }))
 	}
 
 	function changeInputRegister(event) {
@@ -58,15 +58,24 @@ function SignUp() {
 			alert('Repeated password incorrectly')
 		} else {
 			console.log('Все ок')
-			store.user.push({ email: register.Email, password: register.Password })
+			setStore((pre) => ({
+				...pre,
+				isLoggedIn: true,
+				user: store.user.push({
+					email: register.Email,
+					password: register.Password
+				})
+			}))
+			// user.push({ email: register.Email, password: register.Password })
 		}
-		modal.isRegistration = !modal.isRegistration
+		setModal((pre) => ({ ...pre, isRegistration: !modal.isRegistration }))
 		setRegister({
 			Email: '',
 			Password: '',
 			PasswordRepeat: ''
 		})
-		store.isLoggedIn = true
+		setStore((pre) => ({ ...pre, isLoggedIn: true }))
+		console.log(store)
 	}
 	function Input(name, placeholder, repeat = '') {
 		return (
@@ -94,7 +103,12 @@ function SignUp() {
 						<div>
 							<div
 								className={styles.crossWrapeer}
-								onClick={() => (modal.isRegistration = !modal.isRegistration)}
+								onClick={() =>
+									setModal((pre) => ({
+										...pre,
+										isRegistration: !modal.isRegistration
+									}))
+								}
 							>
 								<img src={Cross} className={styles.cross} />
 							</div>
