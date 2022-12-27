@@ -2,16 +2,18 @@ import { Routes, Route } from "react-router-dom";
 import { observer } from "mobx-react-lite";
 
 import {
-  Home,
-  SingleNewsPage,
-  News,
-  TShirts,
-  ClubProgramPage,
-  FaqPage,
-  ContactsPage,
-  NotFoundPage,
-} from "pages";
-import { ROUTES } from "shared/consts";
+    Home,
+    SingleNewsPage,
+    News,
+    TShirts,
+    ClubProgramPage,
+    FaqPage,
+    ContactsPage,
+    NotFoundPage,
+    PaymentAndDeliveryPage,
+} from 'pages'
+import { ROUTES } from 'shared/consts'
+import { useState } from 'react';
 
 function Router() {
   return (
@@ -23,7 +25,8 @@ function Router() {
       <Route path={ROUTES.CLUBP_ROGRAM} element={<ClubProgramPage />} />
       <Route path={ROUTES.FAQ} element={<FaqPage />} />
       <Route path={ROUTES.CONTACTS} element={<ContactsPage />} />
-      <Route path="*" element={<NotFoundPage />} />
+      <Route path={ROUTES.PAYMENTANDDELIVERY} element={<PaymentAndDeliveryPage />} />
+      <Route path='*' element={<NotFoundPage/>} />
     </Routes>
   );
 }
