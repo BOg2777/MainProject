@@ -24,14 +24,16 @@ function Header() {
 	function personalArea() {
 		if (store.isLoggedIn) {
 			return (
-				<li
-					className={styles.user}
-					onClick={() => {
-						console.log('ok')
-					}}
-				>
-					<User className={styles.userImg} />
-				</li>
+				<Link to='/personalArea'>
+					<li
+						className={styles.user}
+						onClick={() => {
+							console.log('ok')
+						}}
+					>
+						<User className={styles.userImg} />
+					</li>
+				</Link>
 			)
 		} else
 			return (
