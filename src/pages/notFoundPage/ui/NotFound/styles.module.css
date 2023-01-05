@@ -1,5 +1,9 @@
-.notFoundPage {
+/* .notFoundPage {
   margin: 60px 0 0 138px;
+} */
+
+.notFoundPage {
+  margin: 60px 20px 100px 20px;
 }
 
 .shuttlecock {
@@ -13,7 +17,7 @@
   padding-bottom: 17%;
 }
 
-.wrapper {
+/* .wrapper {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -21,6 +25,14 @@
   gap: 32px;
   width: 574px;
   height: 208px;
+} */
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 208px;
+  justify-content: space-between;
 }
 
 .error {
@@ -35,7 +47,7 @@
 }
 
 .oops {
-  width: 574px;
+  /* width: 574px; */
   height: 48px;
   /* font-family: "Actay Wide"; */
   font-style: normal;
