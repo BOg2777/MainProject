@@ -47,13 +47,14 @@ function SignIn() {
 		)
 	}
 
-	function submitChackin() {
+	const submitChackin = (event) => {
+		event.preventDefault()
 		store.user.forEach((element) => {
 			if (
 				element.email == register.Email &&
 				element.password == register.Password
 			) {
-				alert('True')
+				console.log('True')
 				setStore((pre) => ({
 					...pre,
 					isLoggedIn: true,
@@ -62,8 +63,12 @@ function SignIn() {
 						password: register.Password
 					})
 				}))
+				setModal((pre) => ({
+					...pre,
+					isSignIn: !pre.isSignIn
+				}))
 			} else {
-				alert('false')
+				console.log('false')
 			}
 		})
 	}

@@ -21,7 +21,30 @@ function Header() {
 	const [modal, setModal] = useContext(Modal)
 	const [sideBar, setSideBar] = useState(false)
 	const showSideBar = () => setSideBar(!sideBar)
-
+	function personalArea() {
+		if (store.isLoggedIn) {
+			return (
+				<li
+					className={styles.user}
+					onClick={() => {
+						console.log('ok')
+					}}
+				>
+					<User className={styles.userImg} />
+				</li>
+			)
+		} else
+			return (
+				<li
+					className={styles.user}
+					onClick={() => {
+						setModal((pre) => ({ ...pre, isSignIn: true }))
+					}}
+				>
+					<User className={styles.userImg} />
+				</li>
+			)
+	}
 	return (
 		<>
 			<header className={styles.header}>
@@ -54,28 +77,7 @@ function Header() {
 						<li className={styles.favourites}>
 							<Favourite className={styles.favourite} />{' '}
 						</li>
-						{/* if(store.isLoggedIn)
-						{
-							<li
-								className={styles.user}
-								onClick={() => {
-									console.log('ok')
-								}}
-							>
-								<User className={styles.userImg} />
-							</li>
-						}
-						else
-						{
-							<li
-								className={styles.user}
-								onClick={() => {
-									setModal((pre) => ({ ...pre, isSignIn: true }))
-								}}
-							>
-								<User className={styles.userImg} />
-							</li>
-						} */}
+						{personalArea()}
 						<li className={styles.shoppingBag}>
 							<ShoppingBag className={styles.shoppingBagImg} />
 						</li>
