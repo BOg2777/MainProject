@@ -13,7 +13,7 @@ import Cross from 'assets/img/Registration/Vector.svg'
 import styles from './styles.module.css'
 
 function SignIn() {
-	const [store] = useContext(Store)
+	const [store, setStore] = useContext(Store)
 	const [modal, setModal] = useContext(Modal)
 	const [register, setRegister] = useState({
 		Email: '',
@@ -47,15 +47,28 @@ function SignIn() {
 		)
 	}
 
-	function submitChackin() {
+	const submitChackin = (event) => {
+		event.preventDefault()
 		store.user.forEach((element) => {
 			if (
 				element.email == register.Email &&
 				element.password == register.Password
 			) {
-				alert('True')
+				console.log('True')
+				setStore((pre) => ({
+					...pre,
+					isLoggedIn: true,
+					user: store.user.push({
+						email: register.Email,
+						password: register.Password
+					})
+				}))
+				setModal((pre) => ({
+					...pre,
+					isSignIn: !pre.isSignIn
+				}))
 			} else {
-				alert('false')
+				console.log('false')
 			}
 		})
 	}

@@ -1,0 +1,35 @@
+.personalArea {
+	margin-left: 20px;
+}
+.navBar {
+	width: 220px;
+	height: 740px;
+	background: #f4f4f4;
+	border-radius: 16px;
+}
+.selection {
+	margin-top: 8px;
+	margin-left: 8px;
+	margin-right: 8px;
+	width: 204px;
+	height: 40px;
+	border-radius: 12px;
+	align-items: center;
+	display: flex;
+	flex-direction: row;
+}
+.text {
+	font-family: 'Hauora';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 20px;
+	color: #252525;
+}
+.img {
+	margin-right: 4px;
+	margin-left: 22px;
+}
+.profile {
+	margin-left: 16px;
+}

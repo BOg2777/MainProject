@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 import { useContext } from 'react'
 import { observer } from 'mobx-react-lite'
 
-import { Modal } from 'app/App'
+import { Modal, Store } from 'app/App'
 import SideBar from 'app/Layout/ui/SideBar/SideBar'
 
 import logo from 'assets/img/Header/Logo.svg'
@@ -17,10 +17,36 @@ import { ReactComponent as ShoppingBag } from 'assets/img/Header/ShoppingBag.svg
 import styles from './styles.module.css'
 
 function Header() {
+	const [store, setStore] = useContext(Store)
 	const [modal, setModal] = useContext(Modal)
 	const [sideBar, setSideBar] = useState(false)
 	const showSideBar = () => setSideBar(!sideBar)
-
+	function personalArea() {
+		if (store.isLoggedIn) {
+			return (
+				<Link to='/personalArea'>
+					<li
+						className={styles.user}
+						onClick={() => {
+							console.log('ok')
+						}}
+					>
+						<User className={styles.userImg} />
+					</li>
+				</Link>
+			)
+		} else
+			return (
+				<li
+					className={styles.user}
+					onClick={() => {
+						setModal((pre) => ({ ...pre, isSignIn: true }))
+					}}
+				>
+					<User className={styles.userImg} />
+				</li>
+			)
+	}
 	return (
 		<>
 			<header className={styles.header}>
@@ -53,14 +79,7 @@ function Header() {
 						<li className={styles.favourites}>
 							<Favourite className={styles.favourite} />{' '}
 						</li>
-						<li
-							className={styles.user}
-							onClick={() => {
-								setModal((pre) => ({ ...pre, isSignIn: true }))
-							}}
-						>
-							<User className={styles.userImg} />
-						</li>
+						{personalArea()}
 						<li className={styles.shoppingBag}>
 							<ShoppingBag className={styles.shoppingBagImg} />
 						</li>

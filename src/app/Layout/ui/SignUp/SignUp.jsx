@@ -67,15 +67,15 @@ function SignUp() {
 				})
 			}))
 			// user.push({ email: register.Email, password: register.Password })
+			setModal((pre) => ({ ...pre, isRegistration: !modal.isRegistration }))
+			setRegister({
+				Email: '',
+				Password: '',
+				PasswordRepeat: ''
+			})
+			setStore((pre) => ({ ...pre, isLoggedIn: true }))
+			console.log(store)
 		}
-		setModal((pre) => ({ ...pre, isRegistration: !modal.isRegistration }))
-		setRegister({
-			Email: '',
-			Password: '',
-			PasswordRepeat: ''
-		})
-		setStore((pre) => ({ ...pre, isLoggedIn: true }))
-		console.log(store)
 	}
 	function Input(name, placeholder, repeat = '') {
 		return (

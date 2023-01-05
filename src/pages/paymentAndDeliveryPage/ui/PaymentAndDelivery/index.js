@@ -1,1 +1,1 @@
-export {default as PaymentAndDelivery} from './PaymentAndDelivery'
+export { default as PaymentAndDelivery } from './PaymentAndDelivery'
