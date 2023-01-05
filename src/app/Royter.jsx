@@ -30,7 +30,7 @@ function Router() {
 				path={ROUTES.PAYMENTAND_DELIVERY}
 				element={<PaymentAndDeliveryPage />}
 			/>
-			<Route path='/personalArea' element={<PersonalArea />} />
+			<Route path={ROUTES.PERSONAL_AREA} element={<PersonalArea />} />
 			<Route path='*' element={<NotFoundPage />} />
 		</Routes>
 	)
