@@ -22,7 +22,7 @@ function Router() {
       <Route path={ROUTES.NEWS} element={<News />} />
       <Route path={ROUTES.NEWS_ID} element={<SingleNewsPage />} />
       <Route path={ROUTES.TSHIRTS} element={<TShirts />} />
-      <Route path={ROUTES.CLUBP_ROGRAM} element={<ClubProgramPage />} />
+      <Route path={ROUTES.CLUB_PROGRAM} element={<ClubProgramPage />} />
       <Route path={ROUTES.FAQ} element={<FaqPage />} />
       <Route path={ROUTES.CONTACTS} element={<ContactsPage />} />
       <Route path={ROUTES.PAYMENTANDDELIVERY} element={<PaymentAndDeliveryPage />} />
