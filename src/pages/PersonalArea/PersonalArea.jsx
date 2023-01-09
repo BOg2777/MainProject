@@ -1,6 +1,7 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { useContext } from 'react'
 import { Link } from 'react-router-dom'
+import { observer } from 'mobx-react-lite'
 
 import styles from './styles.module.css'
 
@@ -12,6 +13,32 @@ import User from 'assets/img/PersonalArea/User.png'
 import { Store } from 'app/App'
 function PersonalArea() {
 	const [store, setStore] = useContext(Store)
+	const [register, setRegister] = useState({
+		Name: '',
+		Surname: '',
+		PasswordRepeat: ''
+	})
+	function changeInputRegister(event) {
+		setRegister((prev) => {
+			return {
+				...prev,
+				[event.target.name]: event.target.value
+			}
+		})
+	}
+	const submitChackin = () => {
+		// setStore((pre) => ({
+		// 	...pre,
+		// 	user: [
+		// 		...pre,
+		// 		{
+		// 			username: register.Name,
+		// 			Surname: register.Surname
+		// 		}
+		// 	]
+		// }))
+		console.log(store)
+	}
 	return (
 		<div className={styles.personalArea}>
 			<div className={styles.navBarWrapper}>
@@ -66,8 +93,12 @@ function PersonalArea() {
 							<div className={styles.text}>Имя</div>
 							<div className={styles.input}>
 								<input
+									name='Name'
+									id='Name'
 									className={styles.inputText}
 									placeholder='Введите Ваше имя'
+									onChange={(event) => changeInputRegister(event)}
+									value={register.Name}
 								/>
 							</div>
 						</div>
@@ -75,8 +106,12 @@ function PersonalArea() {
 							<div className={styles.text}>Фамилия</div>
 							<div className={styles.input}>
 								<input
+									name='Surname'
+									id='Surname'
 									className={styles.inputText}
 									placeholder='Введите Вашу фамилию'
+									onChange={(event) => changeInputRegister(event)}
+									value={register.Surname}
 								/>
 							</div>
 						</div>
@@ -101,7 +136,9 @@ function PersonalArea() {
 						<div className={styles.changePaswword}>Изменить пароль</div>
 					</div>
 					<div className={styles.btnwrapper}>
-						<button className={styles.btn}>Сохранить</button>
+						<button className={styles.btn} onClick={submitChackin}>
+							Сохранить
+						</button>
 					</div>
 				</div>
 			</div>
@@ -109,4 +146,4 @@ function PersonalArea() {
 	)
 }
 
-export default PersonalArea
+export default observer(PersonalArea)
