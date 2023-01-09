@@ -9,7 +9,7 @@ import userIcon from 'assets/img/Header/UserIcon.svg'
 import thunder from 'assets/img/Header/Thunder.svg'
 
 function InfoAndOffers() {
-	const [modal] = useContext(Modal)
+	const [modal, setModal] = useContext(Modal)
 	const navigate = useNavigate()
 
 	const navigateToClubProgram = () => {
@@ -45,7 +45,9 @@ function InfoAndOffers() {
 					</p>
 					<button
 						className={styles.buttonBenefits}
-						onClick={() => modal.isRegistration(true)}
+						onClick={() => {
+							setModal((pre) => ({ ...pre, isRegistration: true }))
+						}}
 					>
 						Зарегистрироваться
 					</button>
