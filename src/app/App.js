@@ -11,12 +11,10 @@ export const ShoppingBasket = createContext()
 
 function App() {
 	const [store, setStore] = useState({
-		user: [
-			{
-				email: 'Developments@gmail.com',
-				password: 'Devel2022'
-			}
-		],
+		user: {
+			email: 'Developments@gmail.com',
+			password: 'Devel2022'
+		},
 		isLoggedIn: false
 	})
 

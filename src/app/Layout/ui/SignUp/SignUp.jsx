@@ -60,13 +60,12 @@ function SignUp() {
 			console.log('Все ок')
 			setStore((pre) => ({
 				...pre,
-				isLoggedIn: true,
-				user: store.user.push({
+				user: {
 					email: register.Email,
 					password: register.Password
-				})
+				}
 			}))
-			// user.push({ email: register.Email, password: register.Password })
+			// store.user.push({ email: register.Email, password: register.Password })
 			setModal((pre) => ({ ...pre, isRegistration: !modal.isRegistration }))
 			setRegister({
 				Email: '',

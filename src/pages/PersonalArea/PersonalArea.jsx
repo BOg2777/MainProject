@@ -12,12 +12,96 @@ import User from 'assets/img/PersonalArea/User.png'
 
 import { Store } from 'app/App'
 function PersonalArea() {
+	function Escape() {
+		setChangePassword(!changePassword)
+	}
+	function submitChackinPassword() {
+		setStore((pre) => ({
+			...pre,
+			user: {
+				email: store.user.email,
+				password: password.password
+			}
+		}))
+		setChangePassword(!changePassword)
+	}
+	function ChangePassword() {
+		if (changePassword)
+			return (
+				<div>
+					<h1 className={styles.changepassword}>Изменение пароля</h1>
+					<p className={styles.text}>Новый пароль*</p>
+					<div className={styles.input}>
+						<input
+							name='password'
+							className={styles.inputTextData}
+							value={password.password}
+							onChange={changeInputPassword}
+						/>
+					</div>
+					<p className={styles.text}>Повторите пароль*</p>
+					<div className={styles.input}>
+						<input
+							name='passwordRepeat'
+							className={styles.inputTextData}
+							value={password.passwordRepeat}
+							onChange={changeInputPassword}
+						/>
+					</div>
+					<div className={styles.wrapperbtnChange}>
+						<div className={styles.btnwrapper}>
+							<button className={styles.btnOtm} onClick={Escape}>
+								Отменить
+							</button>
+						</div>
+						<div className={styles.btnwrapper}>
+							<button className={styles.btnCox} onClick={submitChackinPassword}>
+								Сохранить
+							</button>
+						</div>
+					</div>
+				</div>
+			)
+		else
+			return (
+				<div>
+					<div className={styles.password}>
+						<div className={styles.text}>Password*</div>
+						<div className={styles.input}>
+							<input
+								className={styles.inputTextData}
+								value={store.user.password}
+							/>
+						</div>
+					</div>
+					<div
+						className={styles.changePaswword}
+						onClick={() => {
+							setChangePassword(!changePassword)
+						}}
+					>
+						Изменить пароль
+					</div>
+					<div className={styles.btnwrapper}>
+						<button className={styles.btn} onClick={submitChackin}>
+							Сохранить
+						</button>
+					</div>
+				</div>
+			)
+	}
 	const [store, setStore] = useContext(Store)
+	console.log(store)
 	const [register, setRegister] = useState({
 		Name: '',
 		Surname: '',
 		PasswordRepeat: ''
 	})
+	const [password, setPassword] = useState({
+		password: '',
+		passwordRepeat: ''
+	})
+	const [changePassword, setChangePassword] = useState(false)
 	function changeInputRegister(event) {
 		setRegister((prev) => {
 			return {
@@ -26,17 +110,22 @@ function PersonalArea() {
 			}
 		})
 	}
+	function changeInputPassword(event) {
+		setPassword((prev) => {
+			return {
+				...prev,
+				[event.target.name]: event.target.value
+			}
+		})
+	}
 	const submitChackin = () => {
-		// setStore((pre) => ({
-		// 	...pre,
-		// 	user: [
-		// 		...pre,
-		// 		{
-		// 			username: register.Name,
-		// 			Surname: register.Surname
-		// 		}
-		// 	]
-		// }))
+		setStore((pre) => ({
+			...pre,
+			userInitians: {
+				username: register.Name,
+				Surname: register.Surname
+			}
+		}))
 		console.log(store)
 	}
 	return (
@@ -121,25 +210,11 @@ function PersonalArea() {
 						<div className={styles.input}>
 							<input
 								className={styles.inputTextData}
-								value={store.user[0].email}
+								value={store.user.email}
 							/>
 						</div>
 					</div>
-					<div className={styles.password}>
-						<div className={styles.text}>Password*</div>
-						<div className={styles.input}>
-							<input
-								className={styles.inputTextData}
-								value={store.user[0].password}
-							/>
-						</div>
-						<div className={styles.changePaswword}>Изменить пароль</div>
-					</div>
-					<div className={styles.btnwrapper}>
-						<button className={styles.btn} onClick={submitChackin}>
-							Сохранить
-						</button>
-					</div>
+					{ChangePassword()}
 				</div>
 			</div>
 		</div>
