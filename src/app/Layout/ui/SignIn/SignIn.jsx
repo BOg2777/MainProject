@@ -58,10 +58,10 @@ function SignIn() {
 				setStore((pre) => ({
 					...pre,
 					isLoggedIn: true,
-					user: store.user.push({
+					user: {
 						email: register.Email,
 						password: register.Password
-					})
+					}
 				}))
 				setModal((pre) => ({
 					...pre,
