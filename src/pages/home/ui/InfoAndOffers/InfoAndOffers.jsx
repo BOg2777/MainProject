@@ -45,9 +45,9 @@ function InfoAndOffers() {
 					</p>
 					<button
 						className={styles.buttonBenefits}
-						onClick={() =>
+						onClick={() => {
 							setModal((pre) => ({ ...pre, isRegistration: true }))
-						}
+						}}
 					>
 						Зарегистрироваться
 					</button>

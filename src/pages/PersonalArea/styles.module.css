@@ -5,10 +5,24 @@
 	display: flex;
 }
 .navBar {
-	width: 220px;
-	height: 740px;
 	background: #f4f4f4;
 	border-radius: 16px;
+	width: 220px;
+	height: 740px;
+	margin-bottom: 10px;
+}
+.selectionActive {
+	background-color: yellow;
+	margin-top: 8px;
+	margin-left: 8px;
+	margin-right: 8px;
+	width: 204px;
+	height: 40px;
+	border-radius: 12px;
+	align-items: center;
+	display: flex;
+	align-items: center;
+	text-align: center;
 }
 .selection {
 	margin-top: 8px;
@@ -19,7 +33,8 @@
 	border-radius: 12px;
 	align-items: center;
 	display: flex;
-	flex-direction: row;
+	align-items: center;
+	text-align: center;
 }
 .text {
 	font-family: 'Hauora';
@@ -34,7 +49,102 @@
 	margin-left: 22px;
 }
 .profile {
+	margin-top: 8px;
 	margin-left: 16px;
+	background: #f4f4f4;
+	border-radius: 16px;
+	margin-bottom: 10px;
+	width: 82.7%;
+}
+.header {
+	margin-left: 40px;
+	margin-top: 40px;
+	margin-bottom: 24px;
+}
+.header_title {
+	font-family: 'Actay Wide';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 48px;
+	color: #000000;
+}
+.header_description {
+	margin-top: 16px;
+	width: 652px;
+	font-family: 'Hauora';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 20px;
+	color: #949494;
+}
+.form {
+	margin-left: 40px;
+}
+.initials {
+	display: flex;
+	margin-bottom: 12px;
+}
+.text {
+	font-family: 'Hauora';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 20px;
+	color: #252525;
+}
+.input {
+	margin-right: 12px;
+	margin-bottom: 12px;
+}
+.inputText {
+	align-items: center;
+	padding: 12px;
+	width: 170px;
+	height: 10px;
+	background: #ffffff;
+	border: 1px solid #d4d4d4;
+	border-radius: 4px;
+}
+.inputTextData {
+	align-items: center;
+	padding: 12px;
+	width: 380px;
+	height: 10px;
+	background: #ffffff;
+	border: 1px solid #d4d4d4;
+	border-radius: 4px;
+}
+.changePaswword {
+	width: 400px;
+	height: 12px;
+	font-family: 'Hauora';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 12px;
+	line-height: 12px;
+	text-align: right;
+	color: #8ea912;
+}
+.btn {
+	margin-top: 32px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	width: 412px;
+	height: 50px;
+	background: #949494;
+	border-radius: 100px;
+	font-family: 'Hauora';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 14px;
+	color: #252525;
+}
+.btn:hover {
+	background: yellow;
 }
 .selection1 {
 	margin-top: 8px;
