@@ -11,7 +11,7 @@ function PersonalArea() {
 	return (
 		<div className={styles.personalArea}>
 			<div className={styles.navBar}>
-				<div className={styles.selection}>
+				<div className={styles.selection1}>
 					<div className={styles.img}>
 						<img src={User} alt='User' />
 					</div>

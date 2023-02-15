@@ -1,5 +1,8 @@
 .personalArea {
+	margin-top: 10px;
+	margin-bottom: 10px;
 	margin-left: 20px;
+	display: flex;
 }
 .navBar {
 	width: 220px;
@@ -32,4 +35,22 @@
 }
 .profile {
 	margin-left: 16px;
+}
+.selection1 {
+	margin-top: 8px;
+	margin-left: 8px;
+	margin-right: 8px;
+	width: 204px;
+	height: 40px;
+	border-radius: 12px;
+	align-items: center;
+	display: flex;
+	flex-direction: row;
+	background-color: yellow;
+}
+.profile {
+	width: 87.4%;
+	height: 740px;
+	background: #f4f4f4;
+	border-radius: 16px;
 }

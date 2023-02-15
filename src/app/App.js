@@ -7,6 +7,7 @@ import Router from './Royter'
 
 export const Store = createContext()
 export const Modal = createContext()
+export const ShoppingBasket = createContext()
 
 function App() {
 	const [store, setStore] = useState({
@@ -23,15 +24,20 @@ function App() {
 		isRegistration: false,
 		isSignIn: false
 	})
+	const [shoppingBasket, setShoppingBasket] = useState([])
 
 	return (
 		<React.StrictMode>
 			<BrowserRouter>
 				<Store.Provider value={[store, setStore]}>
 					<Modal.Provider value={[modal, setModal]}>
-						<Layout>
-							<Router />
-						</Layout>
+						<ShoppingBasket.Provider
+							value={[shoppingBasket, setShoppingBasket]}
+						>
+							<Layout>
+								<Router />
+							</Layout>
+						</ShoppingBasket.Provider>
 					</Modal.Provider>
 				</Store.Provider>
 			</BrowserRouter>

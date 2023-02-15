@@ -14,7 +14,6 @@ import {
 	PersonalArea
 } from 'pages'
 import { ROUTES } from 'shared/consts'
-import { useState } from 'react'
 
 function Router() {
 	return (
