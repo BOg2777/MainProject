@@ -51,8 +51,8 @@ function SignIn() {
 		event.preventDefault()
 		store.user.forEach((element) => {
 			if (
-				element.email == register.Email &&
-				element.password == register.Password
+				element.email === register.Email &&
+				element.password === register.Password
 			) {
 				console.log('True')
 				setStore((pre) => ({

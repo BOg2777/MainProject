@@ -1,7 +1,8 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { useLocation } from 'react-router-dom'
 import { useEffect } from 'react'
 import { observer } from 'mobx-react-lite'
+import { Store } from 'app/App'
 
 import {
 	InfoAndOffers,
@@ -15,11 +16,16 @@ import {
 
 function Home() {
 	const { pathname } = useLocation()
+	const [store, setStore] = useContext(Store)
 
 	useEffect(() => {
 		window.scrollTo(0, 0)
 	}, [pathname])
-
+	setTimeout(() => {
+		if (localStorage.getItem('User') != null) {
+			setStore(JSON.parse(localStorage.getItem('User')))
+		}
+	}, 500)
 	return (
 		<div>
 			<InfoAndOffers />

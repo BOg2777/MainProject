@@ -12,8 +12,10 @@ import logoYandex from 'assets/img/Registration/Yandex.svg'
 import Cross from 'assets/img/Registration/Vector.svg'
 
 import styles from './styles.module.css'
+import { useEffect } from 'react'
 
 function SignUp() {
+	let number = []
 	const [store, setStore] = useContext(Store)
 	const [modal, setModal] = useContext(Modal)
 	let passw = /^[A-Za-z]\w{7,14}$/
@@ -65,7 +67,6 @@ function SignUp() {
 					password: register.Password
 				}
 			}))
-			// store.user.push({ email: register.Email, password: register.Password })
 			setModal((pre) => ({ ...pre, isRegistration: !modal.isRegistration }))
 			setRegister({
 				Email: '',
@@ -74,6 +75,7 @@ function SignUp() {
 			})
 			setStore((pre) => ({ ...pre, isLoggedIn: true }))
 			console.log(store)
+			number = [1]
 		}
 	}
 	function Input(name, placeholder, repeat = '') {
@@ -93,6 +95,9 @@ function SignUp() {
 				/>
 			</div>
 		)
+	}
+	if (store.isLoggedIn === true) {
+		localStorage.setItem('User', JSON.stringify(store))
 	}
 	if (modal.isRegistration) {
 		return (
