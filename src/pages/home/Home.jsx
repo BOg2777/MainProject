@@ -29,7 +29,7 @@ function Home() {
 	return (
 		<div>
 			<InfoAndOffers />
-			<NavToCategories />
+			{/* <NavToCategories /> */}
 			<PreviewNewProducts />
 			<Carousel />
 			<PreviewNews />

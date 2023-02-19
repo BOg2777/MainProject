@@ -8,7 +8,7 @@ import LinkImg from 'assets/img/PersonalArea/Link-chain.png'
 import Truck from 'assets/img/PersonalArea/Truck.png'
 import User from 'assets/img/PersonalArea/User.png'
 import { useState } from 'react'
-import { Alert, AlertTitle, Button } from '@mui/material'
+import { Alert } from '@mui/material'
 
 function Subscripe() {
 	const EMAIL_REGEXP =

@@ -12,7 +12,8 @@ import {
 	NotFoundPage,
 	PaymentAndDeliveryPage,
 	PersonalArea,
-	Subscripe
+	Subscripe,
+	Truck
 } from 'pages'
 import { ROUTES } from 'shared/consts'
 
@@ -34,7 +35,7 @@ function Router() {
 			<Route path='*' element={<NotFoundPage />} />
 			<Route path={ROUTES.PERSONAL_AREA_LINK} element={<Subscripe />} />
 			<Route path={ROUTES.PERSONAL_AREA_ORDERS} element={<PersonalArea />} />
-			<Route path={ROUTES.PERSONAL_AREA_TRUCK} element={<PersonalArea />} />
+			<Route path={ROUTES.PERSONAL_AREA_TRUCK} element={<Truck />} />
 		</Routes>
 	)
 }
