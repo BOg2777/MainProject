@@ -24,27 +24,39 @@ function Header() {
 	function personalArea() {
 		if (store.isLoggedIn) {
 			return (
-				<Link to='/personalArea'>
+				<div>
+					<Link to='/personalArea'>
+						<li
+							className={styles.user}
+							onClick={() => {
+								console.log('ok')
+							}}
+						>
+							<User className={styles.userImg} />
+						</li>
+					</Link>
+					<Link to='/personalArea/orders'>
+						<li className={styles.shoppingBag}>
+							<ShoppingBag className={styles.shoppingBagImg} />
+						</li>
+					</Link>
+				</div>
+			)
+		} else
+			return (
+				<div>
 					<li
 						className={styles.user}
 						onClick={() => {
-							console.log('ok')
+							setModal((pre) => ({ ...pre, isSignIn: true }))
 						}}
 					>
 						<User className={styles.userImg} />
 					</li>
-				</Link>
-			)
-		} else
-			return (
-				<li
-					className={styles.user}
-					onClick={() => {
-						setModal((pre) => ({ ...pre, isSignIn: true }))
-					}}
-				>
-					<User className={styles.userImg} />
-				</li>
+					<li className={styles.shoppingBag}>
+						<ShoppingBag className={styles.shoppingBagImg} />
+					</li>
+				</div>
 			)
 	}
 	return (
@@ -80,9 +92,6 @@ function Header() {
 							<Favourite className={styles.favourite} />{' '}
 						</li>
 						{personalArea()}
-						<li className={styles.shoppingBag}>
-							<ShoppingBag className={styles.shoppingBagImg} />
-						</li>
 					</ul>
 				</nav>
 			</header>

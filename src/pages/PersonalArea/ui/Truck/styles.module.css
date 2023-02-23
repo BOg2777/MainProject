@@ -93,6 +93,7 @@
 	font-size: 14px;
 	line-height: 20px;
 	color: #252525;
+	margin-top: 12px;
 }
 .profile {
 	width: 87.4%;
@@ -103,7 +104,7 @@
 .inputText {
 	align-items: center;
 	padding: 12px;
-	width: 170px;
+	width: 250px;
 	height: 10px;
 	background: #ffffff;
 	border: 1px solid #d4d4d4;
@@ -135,9 +136,9 @@
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
-	width: 412px;
+	width: 300px;
 	height: 50px;
-	background: #949494;
+	background: yellow;
 	border-radius: 100px;
 	font-family: 'Hauora';
 	font-style: normal;
@@ -146,7 +147,7 @@
 	color: #252525;
 }
 .btn:hover {
-	background: yellow;
+	cursor: pointer;
 }
 .selection1 {
 	margin-top: 8px;
@@ -215,6 +216,7 @@
 .input {
 	margin-right: 12px;
 	margin-bottom: 12px;
+	margin-top: 10px;
 }
 .email {
 	margin-left: 40px;
@@ -230,4 +232,17 @@
 	line-height: 20px;
 	color: #252525;
 	margin-bottom: 10px;
+}
+.rightSideGroup {
+	margin-top: 12px;
+	display: flex;
+	flex-direction: column;
+}
+.leftSideGroup {
+	margin-top: 12px;
+	display: flex;
+	flex-direction: column;
+}
+.wrapperForm {
+	display: flex;
 }

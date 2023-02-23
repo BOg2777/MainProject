@@ -8,8 +8,11 @@ import LinkImg from 'assets/img/PersonalArea/Link-chain.png'
 import Truc from 'assets/img/PersonalArea/Truck.png'
 import User from 'assets/img/PersonalArea/User.png'
 import { useState } from 'react'
+import { ShoppingBasket } from 'app/App'
+import { useContext } from 'react'
 
 function Truck() {
+	const [shoppingBasket, setShoppingBasket] = useContext(ShoppingBasket)
 	return (
 		<div className={styles.personalArea}>
 			<div className={styles.navBarWrapper}>
@@ -23,7 +26,7 @@ function Truck() {
 						</div>
 					</Link>
 					<Link to='/personalArea/orders'>
-						<div className={styles.selection}>
+						<div className={styles.selectionActive}>
 							<div className={styles.img}>
 								<img src={Box} alt='Box' />
 							</div>
@@ -39,7 +42,7 @@ function Truck() {
 						</div>
 					</Link>
 					<Link to='/personalArea/truck'>
-						<div className={styles.selectionActive}>
+						<div className={styles.selection}>
 							<div className={styles.img}>
 								<img src={Truc} alt='Truck' />
 							</div>
@@ -48,7 +51,28 @@ function Truck() {
 					</Link>
 				</div>
 			</div>
-			<div className={styles.profile}></div>
+			<div className={styles.profile}>
+				<div className={styles.header}>
+					<div className={styles.header_title}>Корзина</div>
+					<div>
+						{shoppingBasket.map((item) => {
+							return (
+								<div className={styles.wrapper}>
+									<img src={item.img} className={styles.img} />
+									<p className={styles.description}>
+										{item.description} <br />
+										{item.model}
+									</p>
+									<p className={styles.btnPrice}>
+										<p className={styles.price}>{item.price} ₽</p>
+										<p> Колличество:</p>
+									</p>
+								</div>
+							)
+						})}
+					</div>
+				</div>
+			</div>
 		</div>
 	)
 }

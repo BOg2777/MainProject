@@ -34,8 +34,11 @@ function Router() {
 			<Route path={ROUTES.PERSONAL_AREA} element={<PersonalArea />} />
 			<Route path='*' element={<NotFoundPage />} />
 			<Route path={ROUTES.PERSONAL_AREA_LINK} element={<Subscripe />} />
-			<Route path={ROUTES.PERSONAL_AREA_ORDERS} element={<PersonalArea />} />
-			<Route path={ROUTES.PERSONAL_AREA_TRUCK} element={<Truck />} />
+			<Route path={ROUTES.PERSONAL_AREA_ORDERS} element={<Truck />} />
+			<Route
+				path={ROUTES.PERSONAL_AREA_TRUCK}
+				element={<PaymentAndDeliveryPage />}
+			/>
 		</Routes>
 	)
 }

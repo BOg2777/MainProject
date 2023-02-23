@@ -186,6 +186,7 @@
 }
 .btnOtm:hover {
 	background: yellow;
+	cursor: pointer;
 }
 .btnCox {
 	margin-top: 32px;

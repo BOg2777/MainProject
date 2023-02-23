@@ -208,6 +208,7 @@
 }
 .btnCox:hover {
 	background: yellow;
+	cursor: pointer;
 }
 .wrapperbtnChange {
 	display: flex;
