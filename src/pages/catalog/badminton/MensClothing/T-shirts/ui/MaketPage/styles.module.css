@@ -1,67 +1,91 @@
-.wrapperSearch{
-    padding: 20px 20px;
+.wrapperSearch {
+	padding: 20px 20px;
 }
-.title{
-    font-family: 'Actay Wide';
+.title {
+	font-family: 'Actay Wide';
 
-    font-size: 40px;
-    font-weight: 700;
+	font-size: 40px;
+	font-weight: 700;
 
-    margin-top: 62px;
-    margin-bottom: 40px;
-}
-
-.filter{
-    display: flex;
-    justify-content: space-between;
-    gap: 5px;
-    margin-bottom: 25px;
+	margin-top: 62px;
+	margin-bottom: 40px;
 }
 
-.input{
-    border-radius: 40px;
-    padding: 10px;
-    outline: none;
-    font-size: 16px;
-    width: 100vw;
+.filter {
+	display: flex;
+	justify-content: space-between;
+	gap: 5px;
+	margin-bottom: 25px;
 }
-.filterCategory{
-    border: 1px solid black;
-    border-radius: 40px;
-    padding: 10px;
-    width: 500px;
-    cursor: pointer;
+
+.input {
+	border-radius: 40px;
+	padding: 10px;
+	outline: none;
+	font-size: 16px;
+	width: 100vw;
 }
-.filterbtn{
-    text-align: center;
-    justify-content: center;
-    border: 1px solid black;
-    border-radius: 40px;
-    padding: 10px;
-    width: 150px;
-    cursor: pointer;
+.filterCategory {
+	border: 1px solid black;
+	border-radius: 40px;
+	padding: 10px;
+	width: 500px;
+	cursor: pointer;
 }
-.wrapperItems{
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0px;
-    margin: 0px 20px 60px 20px;
+.filterbtn {
+	text-align: center;
+	justify-content: center;
+	border: 1px solid black;
+	border-radius: 40px;
+	padding: 10px;
+	width: 150px;
+	cursor: pointer;
 }
-.wrapperSrc{
-    display: flex;
-    margin-top: 26px;
-    margin-left: 20px;
+.wrapperItems {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0px;
+	margin: 0px 20px 60px 20px;
 }
-.src{
-    font-family: 'Hauora';
-    font-style: normal;
-    color: #949494;
-    padding-right: 8px;
+.wrapperSrc {
+	display: flex;
+	margin-top: 26px;
+	margin-left: 20px;
 }
-.srcImg{
-    height: 8px;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding-left: 8px;
+.src {
+	font-family: 'Hauora';
+	font-style: normal;
+	color: #949494;
+	padding-right: 8px;
+}
+.srcImg {
+	height: 8px;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	padding-left: 8px;
+}
+.pagination {
+	display: flex;
+	margin-top: 30px;
+	justify-content: center;
+	margin-bottom: 30px;
+}
+.input1 {
+	text-align: center;
+	width: 50px;
+	padding: 10px;
+	outline: none;
+	font-size: 16px;
+	background-color: #ff00ff;
+}
+.btn {
+	border-radius: 10px;
+	background-color: yellow;
+	border: none;
+	color: black;
+	padding: 14px 14px;
+	text-decoration: none;
+	margin: 4px 2px;
+	cursor: pointer;
 }
