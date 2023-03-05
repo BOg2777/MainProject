@@ -12,6 +12,10 @@ import { ShoppingBasket } from 'app/App'
 import { useContext } from 'react'
 
 function Truck() {
+	const [shoppingBaskett, setShoppingBaskett] = useContext(ShoppingBasket)
+	if (shoppingBaskett != []) {
+		localStorage.setItem('ShoppingBasket', JSON.stringify(shoppingBaskett))
+	}
 	function Delete(id) {
 		setShoppingBasket(
 			shoppingBasket.filter((item, id1) => {

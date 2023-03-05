@@ -2,7 +2,7 @@ import React, { useContext } from 'react'
 import { useLocation } from 'react-router-dom'
 import { useEffect } from 'react'
 import { observer } from 'mobx-react-lite'
-import { Store } from 'app/App'
+import { ShoppingBasket, Store } from 'app/App'
 
 import {
 	InfoAndOffers,
@@ -17,6 +17,7 @@ import {
 function Home() {
 	const { pathname } = useLocation()
 	const [store, setStore] = useContext(Store)
+	const [shoppingBasket, setShoppingBasket] = useContext(ShoppingBasket)
 
 	useEffect(() => {
 		window.scrollTo(0, 0)
@@ -26,6 +27,11 @@ function Home() {
 			setStore(JSON.parse(localStorage.getItem('User')))
 		}
 	}, 500)
+	setTimeout(() => {
+		if (localStorage.getItem('ShoppingBasket') != []) {
+			setShoppingBasket(JSON.parse(localStorage.getItem('ShoppingBasket')))
+		}
+	}, 400)
 	return (
 		<div>
 			<InfoAndOffers />
