@@ -24,7 +24,7 @@ function Header() {
 	function personalArea() {
 		if (store.isLoggedIn) {
 			return (
-				<div>
+				<div className={styles.iconsUser}>
 					<Link to='/personalArea'>
 						<li
 							className={styles.user}
@@ -44,7 +44,7 @@ function Header() {
 			)
 		} else
 			return (
-				<div>
+				<div className={styles.iconsUser}>
 					<li
 						className={styles.user}
 						onClick={() => {
