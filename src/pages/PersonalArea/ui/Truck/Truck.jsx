@@ -12,6 +12,48 @@ import { ShoppingBasket } from 'app/App'
 import { useContext } from 'react'
 
 function Truck() {
+	function Delete(id) {
+		setShoppingBasket(
+			shoppingBasket.filter((item, id1) => {
+				if (id1 !== id) {
+					return true
+				}
+			})
+		)
+	}
+	const [register, setRegister] = useState({
+		0: '1',
+		1: '1',
+		2: '1',
+		3: '1',
+		4: '1',
+		5: '1',
+		6: '1',
+		7: '1',
+		8: '1',
+		9: '1',
+		10: '1',
+		11: '1',
+		12: '1',
+		13: '1',
+		14: '1',
+		15: '1',
+		16: '1',
+		17: '1',
+		18: '1',
+		19: '1',
+		20: '1'
+	})
+	function changeInputRegister(event) {
+		if (event.target.value >= 0) {
+			setRegister((prev) => {
+				return {
+					...prev,
+					[event.target.name]: event.target.value
+				}
+			})
+		}
+	}
 	const [shoppingBasket, setShoppingBasket] = useContext(ShoppingBasket)
 	return (
 		<div className={styles.personalArea}>
@@ -55,18 +97,55 @@ function Truck() {
 				<div className={styles.header}>
 					<div className={styles.header_title}>Корзина</div>
 					<div>
-						{shoppingBasket.map((item) => {
+						{shoppingBasket.map((item, id) => {
 							return (
-								<div className={styles.wrapper}>
-									<img src={item.img} className={styles.img} />
-									<p className={styles.description}>
-										{item.description} <br />
-										{item.model}
-									</p>
-									<p className={styles.btnPrice}>
-										<p className={styles.price}>{item.price} ₽</p>
-										<p> Колличество:</p>
-									</p>
+								<div>
+									<div className={styles.wrapper}>
+										<div className={styles.imgWrapper}>
+											<img src={item.img} className={styles.img1} />
+										</div>
+										<p className={styles.description}>
+											{item.description} {item.model}
+										</p>
+										<p className={styles.btnPrice}>
+											<p className={styles.price}>{item.price} ₽</p>
+											<div className={styles.count}>
+												{' '}
+												<p className={styles.TextInput}>Колличество:</p>
+												<input
+													name={String(id)}
+													type='number'
+													className={styles.countNumber}
+													placeholder='1'
+													onChange={(event) => changeInputRegister(event)}
+													value={register[id]}
+												></input>
+											</div>
+											<div className={styles.wight}>
+												<select>
+													<option>M</option>
+													<option>L</option>
+													<option>S</option>
+													<option>XL</option>
+													<option>XS</option>
+												</select>
+											</div>
+											<p className={styles.price}>
+												Итого : {Number(item.price) * register[id]} ₽
+											</p>
+										</p>
+										<div className={styles.wrapperDelete}>
+											<div
+												className={styles.delete}
+												onClick={() => {
+													Delete(id)
+												}}
+											>
+												Удалить
+											</div>
+										</div>
+									</div>
+									<div className={styles.line}></div>
 								</div>
 							)
 						})}

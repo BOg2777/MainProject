@@ -246,3 +246,155 @@
 .wrapperForm {
 	display: flex;
 }
+.wrapper {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	padding: 0px;
+	gap: 16px;
+	height: 146px;
+}
+.imgWrapper {
+	width: 102px;
+	height: 146px;
+}
+.img1 {
+	width: 102px;
+	height: 146px;
+}
+.btnPrice {
+	display: flex;
+}
+.price {
+	margin-top: 8px;
+	margin-right: 10px;
+	font-family: 'Actay Wide';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 24px;
+	/* identical to box height, or 120% */
+
+	/* Neutral/70 */
+
+	color: #3f413e;
+}
+.description {
+	margin-top: 8px;
+	margin-left: 20px;
+	margin-right: 40px;
+	font-family: 'Hauora';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 24px;
+	/* identical to box height, or 120% */
+
+	text-decoration-line: underline;
+
+	/* Neutral/90 */
+
+	color: #252525;
+}
+.count {
+	display: flex;
+	margin-right: 40px;
+	margin-left: 40px;
+	font-family: 'Hauora';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 20px;
+	/* identical to box height, or 143% */
+
+	text-align: center;
+
+	/* Neutral/90 */
+
+	color: #252525;
+}
+.countNumber {
+	width: 50px;
+	background-color: #fafafa;
+	border: 0;
+	box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+	transition: 0.3s box-shadow;
+}
+.line {
+	margin-top: 15px;
+	/* width: 87.4%; */
+	height: 0px;
+
+	/* Neutral/50 */
+
+	border: 1px solid #d4d4d4;
+
+	/* Inside auto layout */
+
+	flex: none;
+	order: 1;
+	flex-grow: 0;
+}
+select {
+	width: 140px;
+	height: 35px;
+	padding: 4px;
+	border-radius: 4px;
+	box-shadow: 2px 2px 8px #999;
+	background: #eee;
+	border: none;
+	outline: none;
+	display: inline-block;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	cursor: pointer;
+}
+option {
+	position: relative;
+}
+option:after {
+	content: '<>';
+	font: 11px 'Consolas', monospace;
+	color: #666;
+	-webkit-transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
+	-ms-transform: rotate(90deg);
+	transform: rotate(90deg);
+	right: 8px;
+	top: 2px;
+	padding: 0 0 2px;
+	border-bottom: 1px solid #ddd;
+	position: absolute;
+	pointer-events: none;
+}
+option:before {
+	content: '';
+	right: 6px;
+	top: 0px;
+	width: 20px;
+	height: 20px;
+	background: #eee;
+	position: absolute;
+	pointer-events: none;
+	display: block;
+}
+.countNumber:hover {
+	box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+}
+.TextInput {
+	margin-top: 8px;
+}
+.wight {
+	margin-right: 20px;
+}
+.wrapperDelete {
+	margin-left: 30px;
+	display: flex;
+	justify-content: end;
+	text-align: end;
+	align-items: end;
+}
+.delete {
+	color: red;
+}
